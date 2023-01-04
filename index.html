@@ -1,47 +1,65 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+<link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+
 
 <head>
+
     <title>wfurney.com</title>
     <style>
-        body {
-            background-color: #333;
-        }
-
         @import url('https://fonts.cdnfonts.com/css/cascadia-code');
 
+        a {
+            text-decoration: none;
+        }
+
         h1 {
-            padding: 5px;
+            margin-top: 40;
             text-align: center;
             font-family: 'Cascadia Code', sans-serif;
-            color: white;
+        }
+
+        h2 {
+            margin-top: -100;
         }
 
         p {
             font-family: 'Cascadia Code', sans-serif;
-            color: white;
         }
 
         ul {
+            font-family: 'Cascadia Code', sans-serif;
             list-style-type: disc;
         }
 
         li {
             padding-left: .25em;
         }
+
+        dark-mode-toggle {
+            text-align: left;
+            appearance: toggle;
+        }
     </style>
 </head>
-
+<h1>
+    <a href="/index.html">William Furney</a>
+</h1>
+<h2>
+    <dark-mode-toggle></dark-mode-toggle>
+</h2>
+<br>
 <body>
-    <h1>
-        <a href="/index.html">William Furney</a>
-    </h1>
+
     <p>Welcome to my website.</p>
     <ul>
         <li><a href="/about.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/blog.html">Blog</a></li>
     </ul>
+
 </body>
 
 </html>
