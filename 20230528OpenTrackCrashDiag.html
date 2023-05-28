@@ -1,0 +1,147 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+<link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+
+<head>
+
+    <title>wfurney.com</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+        a {
+            color: rgb(59, 36, 189);
+            text-decoration: none;
+        }
+
+        blockquote{
+            color: rgb(59, 36, 189);
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            margin-top: 40;
+            text-align: center;
+            font-family: 'Cascadia Code', sans-serif;
+        }
+        
+        h2 {
+            margin-top: -100;
+        }
+
+        h3 {
+            font-family: 'Cascadia Code', sans-serif;
+        }
+
+        p {
+            font-family: 'Cascadia Code', sans-serif;
+        }
+
+        dark-mode-toggle {
+            padding-top: 5px;
+            text-align: left;
+            appearance: toggle;
+        }
+
+        ul {
+        font-family: 'Cascadia Code', sans-serif;
+        list-style-type: disc;
+        }
+
+        li {
+            padding-left: .25em;
+        }
+    </style>
+    <h1>
+        <a href="/index.html">William Furney</a>
+    </h1>
+    <h2>
+        <dark-mode-toggle></dark-mode-toggle>
+    </h2>
+</head>
+<br>
+<body>
+    <p>OpenTrack Crash Diagnosis:</p>
+    <p><em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack. A FOSS head-tracking system for games like DCS, Star Citizen and Microsoft Flight Simulator. Remediating this issue required utilizing a new (to me) program WinDbg to analyze the crash files and then extrapolating based on the source code. Here's a bit about what I learned from the <a href="/https://github.com/opentrack/opentrack/issues/1661" class="inline">issue #1661 on GitHub</a>.</em>
+
+<br>
+<br>
+------------------------------------------------
+<br>
+<b>
+The Issue:
+</b>
+<br>
+------------------------------------------------
+<br>OpenTrack starts and then immediately closes. This also happens on the portable version and in prior OpenTrack releases. There is no error message or information displayed to the user about why the crash occurs. A crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> after each run.
+<br><br>
+------------------------------------------------
+<br>
+<b>
+The Diagnosis:
+</b>
+<br>
+------------------------------------------------
+<br>
+First, to try and get a sense of what the problem actually is, I open the crash dump file in Visual Studio to look for an exception message or error code:
+<br><br>
+<code><b><em>Exception Message: 0xc0000409</em></b></code>
+<br><br>
+The message associated with this code is <code><b><em>"Security check failure or stack buffer overrun"</b></em></code>. Next, I want to check is whether other users of the app have experienced similar issues, and I find the other issues mentioned in <a href="/https://github.com/opentrack/opentrack/issues/1661" class="inline">#1661</a>.</em>
+<br><br>
+Now I begin to debug and analyze the crash using WinDbg. Here are the results from the initial WinDbg trace:
+<br><br>
+
+<code><em>
+    STACK_TEXT:  
+    WARNING: Stack unwind information not available. Following frames may be wrong.    <br>
+    0019fbfc 70cfbdbd     00000000 00000000 00000000 <br>opentrack_user_interface!process_detector_worker::qt_metacall+0x6d36<br>
+    0019fc44 70cfbe53     00000000 00000000 00000000 <br>opentrack_user_interface!process_detector_worker::qt_metacall+0x6c8d<br>
+    0019fc6c 70ce1646     70d2fd80 00001000 007e4645 <br>opentrack_user_interface!process_detector_worker::qt_metacall+0x6d23<br>
+    0019fcb8 70ce1802     00000000 007cc880 0035b000 opentrack_user_interface+0x1646<br>
+    0019fd48 0061c1ab     00000001 007cc880 0019fd64 opentrack_user_interface!otr_main+0x92<br>
+    0019fd8c 0061d8e2     00610000 00000000 00793c91 opentrack+0xc1ab<br>
+    0019fdd8 762e7d59     0035b000 762e7d40 0019fe40 opentrack+0xd8e2<br>
+    0019fde8 7771b74b     0035b000 396df400 00000000 kernel32!BaseThreadInitThunk+0x19<br>
+    0019fe40 7771b6cf     ffffffff 7774867c 00000000 ntdll!__RtlUserThreadStart+0x2b<br>
+    0019fe50 00000000     0061d966 0035b000 00000000 ntdll!_RtlUserThreadStart+0x1b<br>
+</em></code>
+<br><br>
+
+This didn't really help me much. I spent quite a bit of time googling and testing red herrings but the issue persisted. After a few hours of little progress, I took to the repo's issues page with the stack details and not much else. That's when I learned from the repo's owner that OpenTrack contains a handy debug package with symbols from the application stored as .pdb (Program Database) files. Essentially these files allow you to see more details around the operations being performed in the trace. 
+<br><br>
+After loading the .pdb files in the WinDbg symbols section, I ran the back trace again, and was presented with this stack. Check out how many more details we can see in the trace now:
+<br><br>
+<code><em>
+STACK_TEXT:  
+000000f1`d52ff3c0 00007ffa`cc9f313a     : 00000000`00000000 00000000`00000000 00000000`00000000<br>0000025e`00000000 : opentrack_user_interface!_invoke_watson+0x18><br>
+000000f1`d52ff3f0 00007ffa`cc9f3022     : 00000000`00000022 000000f1`d52ff4a0 00000000`00000002<br> 0000025e`04681300 : opentrack_user_interface!_invalid_parameter_internal+0xce<br>
+000000f1`d52ff430 00007ffa`cc9f3155     : 00000000`00000022 00007ffa`cc9f4909 00000000`00000000<br> 00000000`00000002 : opentrack_user_interface!_invalid_parameter+0x52<br>
+000000f1`d52ff4b0 00007ffa`cc9f2c71     : 00007ffa`cca0f0c8 00000000`00000002 0000025e`04622695<br> 00000000`00000002 : opentrack_user_interface!_invalid_parameter_noinfo+0x19<br>
+000000f1`d52ff4f0 00007ffa`cc9d17c0     : 0000025e`045db8d0 0000025e`00000000 000000f1`d52ff5a0<br> 00000000`00000002 : opentrack_user_interface!strcat_s+0x2d<br>
+000000f1`d52ff520 00007ffa`cc9d1a07     : 0000025e`0467fc90 0000025e`0467cc30 0000025e`0467f320<br> 0000025e`0467f2d0 : opentrack_user_interface!add_win32_path+0x180<br>
+000000f1`d52ff5c0 00007ff7`1f45ddb9     : 0000025e`00000001 0000025e`045c6778 00000000`00001fc0<br> 00007ff7`1f494180 : opentrack_user_interface!otr_main+0x107<br>
+000000f1`d52ff7a0 00007ff7`1f45f676     : 00000000`0000000a 00007ff7`1f45f6ed 00000000`00000000<br> 00000000`00000000 : opentrack!WinMain+0x39<br>
+000000f1`d52ff810 00007ffb`7d7226ad     : 00000000`00000000 00000000`00000000 00000000`00000000<br> 00000000`00000000 : opentrack!__scrt_common_main_seh+0x106<br>
+000000f1`d52ff850 00007ffb`7ee6a9f8     : 00000000`00000000 00000000`00000000 00000000`00000000<br> 00000000`00000000 : KERNEL32!BaseThreadInitThunk+0x1d<br>
+000000f1`d52ff880 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000<br> 00000000`00000000 : ntdll!RtlUserThreadStart+0x28<br>
+</em></code>
+<br><br>
+
+With this stack, the issue is much more clear. I'll let my comment from the GitHub issue explain further:
+<br><br>
+</p>
+<blockquote>"Loading the trace file (with the symbols from the win32-dbginfo package) and running "!analyze -v". There are now references to "invalid_parameter" around a strcat_s function call. <em>Looking in the source code, strcat_s is used one time in init.cpp in the method add_win32_path.</em> That is also referenced in the stack. So the parameter passed to strcat_s (env_path) is invalid. My environment path variable is overflowing, which is why we see the c0000409 exception for stack buffer overrun."</q>
+<br><br></blockquote>
+<p>
+Once I saw that the strcat_s function in the source code was called with a variable env_path, the solution clicked, because I have had previous issue with my path environment variable. The OpenTrack owner committed code changes to init.cpp to resolve this issue and those will be included in OT's new release. This issue was quite interesting and a rewarding one to finally solve. Special thanks to the OpenTrack owner Stanislaw  for working with me to resolve it.
+</p>
+      
+<br><br><br><br>
+</body>
+
+</html>
