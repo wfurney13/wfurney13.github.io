@@ -8,6 +8,10 @@ a {
     color: white;
 }
 
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h1 {
     color: white;
 }
