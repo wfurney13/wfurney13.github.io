@@ -19,10 +19,9 @@
 
 <body>
     <p><b><u>OpenTrack Crash Diagnosis:</u></b></b></p>
-    <p><em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack. A FOSS head-tracking program for
+    <p><em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack, a FOSS head-tracking program for
             games like DCS, Star Citizen and Microsoft Flight Simulator. Remediating this issue required utilizing a new
-            (to me) program WinDbg to analyze the crash files and then extrapolating based on the source code. Here's a
-            bit about what I learned from the <a href="/https://github.com/opentrack/opentrack/issues/1661"
+            (to me) program, WinDbg, to analyze the crash files and then extrapolating to draw conclusions based on the source code. Here's a bit about what I learned. This is all documented in the <a href="/https://github.com/opentrack/opentrack/issues/1661"
                 class="inline">issue #1661 on GitHub</a>.</em>
 
         <br><br><br>
@@ -34,7 +33,7 @@
         <br>
         <br>OpenTrack starts and then immediately closes. This also happens on the portable version and in prior
         OpenTrack releases. There is no error message or information displayed to the user about why the crash occurs. A
-        crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> after each run.
+        crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> when the application exits.
         <br><br><br>
         <b>
             <u>
@@ -44,16 +43,16 @@
         <br>
         <br>
         First, to try and get a sense of what the problem actually is, I open the crash dump file in Visual Studio to
-        look for an exception message or error code:
+        look for an exception message or error code. I find this error:
         <br><br>
         <code><b><em>Exception Message: 0xc0000409</em></b></code>
         <br><br>
         The message associated with this code is
-        <code><b><em>"Security check failure or stack buffer overrun"</b></em></code>. Next, I want to check is whether
+        <code><b><em>"Security check failure or stack buffer overrun"</b></em></code>. Next, I check whether
         other users of the app have experienced similar issues, and I find the other issues mentioned in <a
             href="/https://github.com/opentrack/opentrack/issues/1661" class="inline">#1661</a>.</em>
         <br><br>
-        Now I begin to debug and analyze the crash using WinDbg. Here are the results from the initial WinDbg trace:
+        Without much else to go on I begin to debug and analyze the crash using WinDbg. Here are the results from the initial WinDbg trace:
         <br><br>
     </p>
         <blockquote><em>
@@ -72,11 +71,8 @@
 </em></blockquote><p>
         <br>
 
-        This didn't really help me much. I spent quite a bit of time googling and testing red herrings but the issue
-        persisted. After a few hours of little progress, I took to the repo's issues page with the stack details and not
-        much else. That's when I learned from the repo's owner that OpenTrack contains a handy debug package with
-        symbols from the application stored as .pdb (Program Database) files. Essentially these files allow you to see
-        more details around the operations being performed in the trace.
+        This didn't really help me much. I spent quite a bit of time googling and testing various "solutions" but the issue
+        persisted. Many of the recommendations involved uninstalling various software, such as Logitech software (we'll see why later on). A few hours later and I had made little progress. I took to the repo's "issues" page with the stack details and not much else. That's when I learned from the repo's owner that OpenTrack contains a handy debug package with symbols from the application stored as .pdb (Program Database) files. Essentially these files allow you to see more details around the operations being performed in the trace.
         <br><br>
         After loading the .pdb files in the WinDbg symbols section, I ran the back trace again, and was presented with
         this stack. Check out how many more details we can see in the trace now:
