@@ -18,46 +18,44 @@
 <br>
 
 <body>
-    <p><b><u>OpenTrack Crash Troubleshooting:</u></b></b></p>
-    <p><em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack, a FOSS head-tracking program
-            for
-            games like DCS, Star Citizen and Microsoft Flight Simulator. Remediating this issue required utilizing a new
-            (to me) program, WinDbg, to analyze the crash files and then extrapolating to draw conclusions based on the
-            source code. Here's a bit about what I learned. This is all documented in the <a
+    <p><b><u>OpenTrack Crash Troubleshooting:</u></b></b><br>
+        <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS head-tracking
+            program for games like DCS, Star Citizen and Microsoft Flight Simulator. Remediating this issue required
+            utilizing new (to me) program, WinDbg, to analyze the crash files and then extrapolating to draw conclusions
+            based on the source code. Here's a bit about what I learned. This is all documented in the <a
                 href="https://github.com/opentrack/opentrack/issues/1661" class="inline">issue #1661 on
                 GitHub</a>.</em>
-
-        <br><br><br>
         <b>
             <u>
                 The Issue:
             </u>
         </b>
         <br>
-        <br>OpenTrack starts and then immediately closes. This also happens on the portable version and in prior
-        OpenTrack releases. There is no error message or information displayed to the user about why the crash occurs. A
+        OpenTrack starts and then immediately closes. This also happens on the portable version and in prior
+        OT releases. There is no error message or information displayed to the user about why the crash occurs. A
         crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> when the application exits.
-        <br><br><br>
+        <br>
+        <br>
         <b>
             <u>
                 The Resolution:
             </u>
         </b>
         <br>
-        <br>
+        
         First, to try and get a sense of what the problem actually is, I open the crash dump file in Visual Studio to
         look for an exception message or error code. I find this error:
         <br><br>
         <code><b><em>Exception Message: 0xc0000409</em></b></code>
-        <br><br>
+        <br>
         The message associated with this code is
         <code><b><em>"Security check failure or stack buffer overrun"</b></em></code>. Next, I check whether
         other users of the app have experienced similar issues, and I find the other issues mentioned in <a
             href="https://github.com/opentrack/opentrack/issues/1661" class="inline">#1661</a>.</em>
-        <br><br>
+        <br>
         Without much else to go on I begin to debug and analyze the crash using WinDbg. Here are the results from the
         initial WinDbg trace:
-        <br><br>
+        <br>
     </p>
     <blockquote><em>
             STACK_TEXT:
@@ -74,28 +72,25 @@
             0019fe50 00000000 ... ntdll!_RtlUserThreadStart+0x1b<br>
         </em></blockquote>
     <p>
-        <br>
 
-        This didn't really help me much. I spent quite a bit of time googling and testing various "solutions" but the
-        issue
-        persisted. Many of the recommendations involved uninstalling various software, such as Logitech software (we'll
-        see why later on). A few hours later and I had made little progress. I took to the repo's "issues" page with the
-        stack details and not much else. That's when I learned from the repo's owner that OpenTrack contains a handy
+        This didn't really help me much. A few hours of troubleshooting later, I took to the repo's "issues" page with
+        the
+        stack details and not much else. That's when I learned from the repo's owner that OT contains a handy
         debug package with symbols from the application stored as .pdb (Program Database) files. Essentially these files
         allow you to see more details around the operations being performed in the trace.
-        <br><br>
+        <br>
         After loading the .pdb files in the WinDbg symbols section, I ran the back trace again, and was presented with
         this stack. Check out how many more details we can see in the trace now:
-        <br><br>
+        <br>
         <code><em></p>
 <blockquote>            
 STACK_TEXT:  
 000000f1`d52ff3c0 00007ffa`cc9f313a ... opentrack_user_interface!_invoke_watson+0x18><br>
 000000f1`d52ff3f0 00007ffa`cc9f3022 ... opentrack_user_interface!_invalid_parameter_internal+0xce<br>
 000000f1`d52ff430 00007ffa`cc9f3155 ... opentrack_user_interface!_invalid_parameter+0x52<br>
-000000f1`d52ff4b0 00007ffa`cc9f2c71 ... opentrack_user_interface!_invalid_parameter_noinfo+0x19<br>
-000000f1`d52ff4f0 00007ffa`cc9d17c0 ... opentrack_user_interface!strcat_s+0x2d<br>
-000000f1`d52ff520 00007ffa`cc9d1a07 ... opentrack_user_interface!add_win32_path+0x180<br>
+000000f1`d52ff4b0 00007ffa`cc9f2c71 ... opentrack_user_interface!<b><u>_invalid_parameter_</b></u>noinfo+0x19<br>
+000000f1`d52ff4f0 00007ffa`cc9d17c0 ... opentrack_user_interface!<b><u>strcat_s</b></u>+0x2d<br>
+000000f1`d52ff520 00007ffa`cc9d1a07 ... opentrack_user_interface!<b><u>add_win32_path</b></u>+0x180<br>
 000000f1`d52ff5c0 00007ff7`1f45ddb9 ... opentrack_user_interface!otr_main+0x107<br>
 000000f1`d52ff7a0 00007ff7`1f45f676 ... opentrack!WinMain+0x39<br>
 000000f1`d52ff810 00007ffb`7d7226ad ... opentrack!__scrt_common_main_seh+0x106<br>
@@ -103,24 +98,25 @@ STACK_TEXT:
 000000f1`d52ff880 00000000`00000000 ... ntdll!RtlUserThreadStart+0x28<br>
 </em></blockquote>
 <p>
-        <br>
         The issue is much more clear with this stack. Notice the call to the function <code>strcat_s</code>. If we
-        search the OpenTrack repo for this function, we can find the source of the issue:
+        search the OT repo for this function, we can find the source of the issue:
     </p>
 
     <blockquote>
         for (const char* ptr : contents)<br>
         {<br>
         if (ptr)<br>
-        strcat_s(env_path, sizeof(env_path), ptr);<br>
+        <b><u>strcat_s(env_path, sizeof(env_path), ptr);</b></u><br>
         if (!ptr || ptr[0] == '\0' || env_path[0] == '\0')<br>
-        {<br>
-        qDebug() << "bad path element" <br>
-            << (ptr==nullptr ? "<null>" : ptr);<br>
+            {<br>
+                qDebug() << "bad path element" <br>
+                << (ptr==nullptr ? "<null>" : ptr);<br>
                 ok = false;<br>
                 break;<br>
-                }<br>
-                }</blockquote>
+            }<br>
+        }
+                
+    </blockquote>
 
     <p>
         An invalid parameter is passed to the <code>strcat_s</code> function, which means there's a problem with my PATH
@@ -128,27 +124,33 @@ STACK_TEXT:
         explain further:
         <br>
     </p>
-    <blockquote>"Loading the trace file (with the symbols from the win32-dbginfo package) and running "!analyze -v".
+    <blockquote style="width: 60%;" >"Loading the trace file (with the symbols from the win32-dbginfo package) and running "!analyze -v".
         There are now references to "invalid_parameter" around a strcat_s function call. <em>Looking in the source code,
-            strcat_s is used one time in init.cpp in the method add_win32_path.</em> That is also referenced in the
+            <code>strcat_s</code> is used one time in init.cpp in the method <code>add_win32_path</code>.</em> That is
+        also referenced in the
         stack. So the parameter passed to strcat_s (env_path) is invalid. My environment path variable is overflowing,
         which is why we see the c0000409 exception for stack buffer overrun."
     </blockquote>
     <p>
         Once I saw that the <code>strcat_s</code> function in the source code was called with a variable env_path, the
         solution
-        clicked. My environment path variable is greater than 2047 characters, leading to the crash. The OpenTrack owner
-        committed code changes to init.cpp to resolve this issue and those will be included in OT's new release. This
+        clicked. My environment path variable is greater than 2047 characters, leading to the crash. Changes were made
+        to init.cpp to resolve this issue and those will be included in OT's new release. This
         issue was quite
         interesting and a rewarding one to finally solve. Special thanks to the OpenTrack owner Stanislaw for working
         with me to resolve it.
     </p>
 
-    <br><br><br>
 </body>
-<footer>  <a href="https://www.norightsreserved.org/" target="_blank" rel="noopener noreferrer"><img src="https://www.norightsreserved.org/img/NoRightsReserved-tiny.png" alt="No Rights Reserved."> </a>
-    
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+<footer>
+    <hr>
+    <a href="https://www.norightsreserved.org/" target="_blank" rel="noopener noreferrer"><img
+            src="https://www.norightsreserved.org/img/NoRightsReserved-tiny.png" alt="No Rights Reserved."> </a>
 
-    <footer> 
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <hr>
+    <footer>
+
 </html>
