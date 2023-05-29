@@ -55,6 +55,21 @@ p {
     padding-bottom: 25px;
 }
 
+p1 {
+    font-family: 'Cascadia Code', sans-serif;
+    font-style: bold;
+    text-decoration: underline;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p2 {
+    font-family: 'Cascadia Code', sans-serif;
+    font-style: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 dark-mode-toggle {
     padding-top: 5px;
     text-align: left;
