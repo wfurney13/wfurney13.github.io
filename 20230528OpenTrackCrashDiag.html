@@ -70,7 +70,7 @@
     0019fe40 7771b6cf ... ntdll!__RtlUserThreadStart+0x2b<br>
     0019fe50 00000000 ... ntdll!_RtlUserThreadStart+0x1b<br>
 </em></blockquote><p>
-        <br><br>
+        <br>
 
         This didn't really help me much. I spent quite a bit of time googling and testing red herrings but the issue
         persisted. After a few hours of little progress, I took to the repo's issues page with the stack details and not
@@ -97,13 +97,12 @@ STACK_TEXT:
 000000f1`d52ff880 00000000`00000000 ... ntdll!RtlUserThreadStart+0x28<br>
 </em></blockquote>
 <p>
-        <br><br>
+        <br>
 
         The issue is much more clear with this stack. Notice the call to the function <code>strcat_s</code>. If we
         search the OpenTrack repo for this function, we can find the source of the issue:
         </p>
 
-      <br>
       <blockquote>
 for (const char* ptr : contents)<br>
     {<br>
@@ -117,19 +116,19 @@ for (const char* ptr : contents)<br>
             break;<br>
         }<br>
     }</blockquote>
-    <br>
+    
 <p>
         An invalid parameter is passed to the <code>strcat_s</code> function, which means there's a problem with my PATH
         environment variable. It can only have a max of 2047 characters. I'll let my comment from the GitHub issue
         explain further:
-        <br><br>
+        <br>
     </p>
     <blockquote>"Loading the trace file (with the symbols from the win32-dbginfo package) and running "!analyze -v".
         There are now references to "invalid_parameter" around a strcat_s function call. <em>Looking in the source code,
             strcat_s is used one time in init.cpp in the method add_win32_path.</em> That is also referenced in the
         stack. So the parameter passed to strcat_s (env_path) is invalid. My environment path variable is overflowing,
         which is why we see the c0000409 exception for stack buffer overrun."
-    </blockquote><br>
+    </blockquote>
     <p>
         Once I saw that the <code>strcat_s</code> function in the source code was called with a variable env_path, the
         solution
