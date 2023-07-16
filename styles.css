@@ -1,8 +1,22 @@
 
-a {
-    color: rgb(59, 36, 189);
-    text-decoration: none;
-}
+
+	@media (prefers-color-scheme: dark){
+		body {color:#fff;background:#000}
+		a:link {color:rgb(81, 119, 196)}
+        a:visited {color:rgb(81, 119, 196)}
+		a:hover, a:visited:hover {color:#def}
+	}
+
+	@media (prefers-color-scheme: light){
+		body {color:rgb(0, 0, 0);background:rgb(228, 228, 228)}
+		a:link {color:rgb(0, 0, 0)}
+        a:visited {color:rgb(0, 0, 0)}
+		a:hover, a:visited:hover {color:rgb(124, 124, 124)}
+	}
+
+    a {
+        text-decoration:none;
+    }
 
 blockquote {
     font-size: 1.1em;
