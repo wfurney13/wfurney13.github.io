@@ -8,7 +8,7 @@
 	}
 
 	@media (prefers-color-scheme: light){
-		body {color:rgb(0, 0, 0);background:rgb(228, 228, 228)}
+		body {color:rgb(0, 0, 0);background:rgb(80, 79, 79)}
 		a:link {color:rgb(0, 0, 0)}
         a:visited {color:rgb(0, 0, 0)}
 		a:hover, a:visited:hover {color:rgb(124, 124, 124)}
