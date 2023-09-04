@@ -1,13 +1,13 @@
 
 
-	@media (prefers-color-scheme: dark){
+	@media (prefers-color-scheme: light){
 		body {color:#fff;background:#000}
 		a:link {color:rgb(81, 119, 196)}
         a:visited {color:rgb(81, 119, 196)}
 		a:hover, a:visited:hover {color:#def}
 	}
 
-	@media (prefers-color-scheme: light){
+	@media (prefers-color-scheme: dark){
 		body {color:rgb(0, 0, 0);background:rgb(217, 217, 217)}
 		a:link {color:rgb(0, 0, 0)}
         a:visited {color:rgb(0, 0, 0)}
@@ -24,11 +24,13 @@ blockquote {
     font-style: italic;
     color: #555555;
     padding: 1.2em 30px 1.2em 1.2em;
+    margin-inline-start: 525px;
+    margin-inline-end: 520px;
     border-left: 8px solid #78C0A8;
     border-right: 2px;
     line-height: 1.3;
-    position: relative;
     background: #EDEDED;
+    position:relative;
 }
 
 code {
@@ -41,9 +43,6 @@ footer {
     margin-bottom: 0.5em;
 }
 
-hr {
-   width: 179px; text-align: left; margin-left: 0;
-}
 
 h1 {
     margin-top: 40;
@@ -54,30 +53,36 @@ h2 {
     margin-top: -100;
 }
 
-p {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-p1 {
-    font-style: bold;
-    text-decoration: underline;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-p2 {
-    font-style: bold;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 ul {
     list-style-type: disc;
 }
 
 li {
-    padding-left: .25em;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.divider {
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.footer {
+    width: 179px; text-align: left; margin-left: 0;
+}
+
+.pbody
+{
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pemp
+{
+    font-style: bold;
+    text-decoration: underline;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
