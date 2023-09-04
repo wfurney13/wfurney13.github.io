@@ -1,13 +1,13 @@
 
 
-	@media (prefers-color-scheme: light){
+	@media (prefers-color-scheme: dark){
 		body {color:#fff;background:#000}
 		a:link {color:rgb(81, 119, 196)}
         a:visited {color:rgb(81, 119, 196)}
 		a:hover, a:visited:hover {color:#def}
 	}
 
-	@media (prefers-color-scheme: dark){
+	@media (prefers-color-scheme: light){
 		body {color:rgb(0, 0, 0);background:rgb(217, 217, 217)}
 		a:link {color:rgb(0, 0, 0)}
         a:visited {color:rgb(0, 0, 0)}
