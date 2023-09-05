@@ -24,8 +24,8 @@ blockquote {
     font-style: italic;
     color: #555555;
     padding: 1.2em 30px 1.2em 1.2em;
-    margin-inline-start: 525px;
-    margin-inline-end: 520px;
+    margin-inline-start: 30em;
+    margin-inline-end: 30em;
     border-left: 8px solid #78C0A8;
     border-right: 2px;
     line-height: 1.3;
@@ -58,22 +58,27 @@ ul {
 }
 
 li {
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 30em;
+    margin-right: 30em;
 }
 
 .divider {
-    margin-left: 450px;
-    margin-right: 450px;
+    margin-left: 25em;
+    margin-right: 25em;
 }
 .footer {
     width: 179px; text-align: left; margin-left: 0;
 }
 
+/*
+   padding-left: 500px;
+    padding-right: 500px;
+*/
+
 .pbody
 {
-    padding-left: 500px;
-    padding-right: 500px;
+   padding-left: 30em;
+    padding-right: 30em;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -81,8 +86,8 @@ li {
 {
     font-style: bold;
     text-decoration: underline;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 30em;
+    padding-right: 30em;
     padding-top: 5px;
     padding-bottom: 5px;
 }
