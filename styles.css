@@ -14,6 +14,12 @@
 		a:hover, a:visited:hover {color:rgb(124, 124, 124)}
 	}
 
+    @media (max-width: 978px) {
+        .pbody{padding-left: 5em; padding-right: 5em;}
+        .pemp{padding-left: 5em; padding-right: 5em;}
+        li{margin-left: 5em; margin-right: 5em;}
+        }
+
     a {
         text-decoration:none;
     }
@@ -70,14 +76,9 @@ li {
     width: 179px; text-align: left; margin-left: 0;
 }
 
-/*
-   padding-left: 500px;
-    padding-right: 500px;
-*/
-
 .pbody
-{
-   padding-left: 30em;
+{ 
+    padding-left: 30em;
     padding-right: 30em;
     padding-top: 5px;
     padding-bottom: 5px;
