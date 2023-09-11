@@ -25,13 +25,13 @@ In Windows 11 without Xonsh, modifying your PATH environment variable can be don
 With Xonsh, the variable is stored directly in a list of strings called $PATH.<sup><a class="note"; href="#fn2"> 2</a></sup>
 Part of the magic of Xonsh is that we can use built-in Python methods against this variable! 
 First, I need to add this line in my Xonsh configuration file:</p><blockquote class="minimal">$UPDATE_OS_ENVIRON = True</blockquote> <p class="pbody"> When True, the OS environment will always be updated when the xonsh environment changes. This gives us a more efficient way to interact with the PATH.<sup><a class="note"; href="#fn3"> 3</a></sup>
-For example, to remove the most recent entry from the list I can use the pop() method:
+For example, to remove the most recent entry from the list I can use the pop() method...
 </p><blockquote class="minimal">$PATH.pop(-1)</blockquote>	
-<p class="pbody">Now let's say I change my mind. I can use Xonsh to call the append() method and add its path to the list:
+<p class="pbody">Now let's say I download an application and want to store its binaries in my PATH for convenience. I can use Xonsh to call the append() method and add its path to the list:
 
 </p><blockquote class="minimal">$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote><p class="pbody">
 
-How cool is that? Other methods would work as well of course, but these two seem the most useful to me at the moment. <br><br>Some other great examples of pythonobash can be found in this overview video.<sup><a class="note"; href="#fn4"> 4</a></sup>
+How cool is that? Other methods would work as well of course, but these two seem the most useful to me at the moment. Some great examples of pythonobash can be found in this overview video.<sup><a class="note"; href="#fn4"> 4</a></sup>
 </p>
 </div>
 </body>

@@ -14,19 +14,20 @@
 </head>
 
 <body>
+<div>
     <p class="pbody"> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS head-tracking
             program for games like DCS, Star Citizen and Microsoft Flight Simulator. I used WinDbg to analyze the crash files and then extrapolated to draw conclusions
             based on the source code. Here's a bit about what I learned. This is all documented in the <a
                 href="https://github.com/opentrack/opentrack/issues/1661" class="inline">issue #1661 on
-                GitHub</a>.</em></p>∅
-    <p class="pemp">
+                GitHub</a>.</em><p style="text-align: center">∅</p>
+    <p class="pemp" style="text-align: center">
         The Issue
     </p>
     <p class="pbody">OpenTrack starts and then immediately closes. This also happens on the portable version and in prior
         OT releases. There is no error message or information displayed to the user about why the crash occurs. A
         crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> when the application exits.</p>
 
-    <p class="pemp">
+    <p class="pemp" style="text-align: center">
         The Resolution
     </p>
 
@@ -120,7 +121,7 @@ allow you to see more details around the operations being performed in the trace
         interesting and a rewarding one to finally solve. Special thanks to the OpenTrack owner Stanislaw for working
         with me to resolve it.
     </p>
-
+</div>
 </body>
 <footer>
  <hr class="footer" >
