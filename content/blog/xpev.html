@@ -27,7 +27,7 @@ Part of the magic of Xonsh is that we can use built-in Python methods against th
 First, I need to add this line in my Xonsh configuration file:</p><blockquote class="minimal">$UPDATE_OS_ENVIRON = True</blockquote> <p class="pbody"> When True, the OS environment will always be updated when the xonsh environment changes. This gives us a more efficient way to interact with the PATH.<sup><a class="note"; href="#fn3"> 3</a></sup>
 For example, to remove the most recent entry from the list I can use the pop() method:
 </p><blockquote class="minimal">$PATH.pop(-1)</blockquote>	
-<p class="pbody">Now let's say I change my mind. I can use Xonsh to call the append() method and add its path to the list:
+<p class="pbody">Now let's say I change my mind. I can use Xonsh to call the append() method and add the path back to the list:
 
 </p><blockquote class="minimal">$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote><p class="pbody">
 
