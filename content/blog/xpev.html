@@ -4,8 +4,9 @@
 
  <head>
     <title>wfurney.com</title>
+	<a href="./otcd.html" style="margin-bottom: -3em; margin-top: .8em; margin-left: -100em;">Previous Post  — Open Track Crash Diagnosis</a>
     <h1 class="hindex">
-      <a href="../../index.html"> William Furney</a>
+      <a href="../../index.html">William Furney</a>
     </h1>
     <p class="pheader">
       <a href="https://www.linkedin.com/in/william-furney-39a418154/"
@@ -30,10 +31,10 @@ With Xonsh, the variable is stored directly in a list of strings called $PATH.<s
 Part of the magic of Xonsh is that we can use built-in Python methods against this variable! 
 First, I need to add this line in my Xonsh configuration file:</p><blockquote class="minimal">$UPDATE_OS_ENVIRON = True</blockquote> <p class="pbody"> When True, the OS environment will always be updated when the xonsh environment changes. This gives us a more efficient way to interact with the PATH.<sup><a class="note"; href="#fn3"> 3</a></sup>
 For example, to remove the most recent entry from the list I can use the pop() method:
-</p><blockquote class="minimal">$PATH.pop(-1)</blockquote>	
+</p><blockquote>$PATH.pop(-1)</blockquote>	
 <p class="pbody">Now let's say I change my mind. I can use the append() method and add the path back to the list:
 
-</p><blockquote class="minimal">$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote><p class="pbody">
+</p><blockquote>$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote><p class="pbody">
 
 How cool is that? Other methods would work as well of course, but these two seem the most useful to me at the moment. <br><br>Some other great examples of pythonobash can be found in this overview video.<sup><a class="note"; href="#fn4"> 4</a></sup>
 </p>
