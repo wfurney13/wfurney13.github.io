@@ -2,21 +2,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../../styles.css">
 
- <head>
-    <title>wfurney.com</title>
-	<a href="./xpev.html" style="margin-bottom: -3em; margin-top: .8em; margin-left: -100em;">Next Post  — Open Track Crash Diagnosis</a>
-    <h1 class="hindex">
-      <a href="../../index.html">William Furney</a>
-    </h1>
-    <p class="pheader">
-      <a href="https://www.linkedin.com/in/william-furney-39a418154/"
-        >Linkedin</a
-      >
-      | <a href="https://github.com/wfurney13/">GitHub</a>
-	  <br>
-	  <a href="mailto:william@wfurney.com">william@wfurney.com</a>
-    </p>
-  </head>
+<head>
+  <title>wfurney.com</title>
+  <a href="./xpev.html" style="margin-bottom: -3em; margin-top: .8em; margin-right: -100em;">Next Post — Xonsh</a>
+  <h1 class="hindex">
+    <a href="../../index.html">William Furney</a>
+  </h1>
+  <p class="pheader">
+    <a href="https://www.linkedin.com/in/william-furney-39a418154/">Linkedin</a>
+    | <a href="https://github.com/wfurney13/">GitHub</a>
+    <br>
+    <a href="mailto:william@wfurney.com">william@wfurney.com</a>
+  </p>
+</head>
 
 <body>
   <div>
@@ -125,7 +123,8 @@
       </em>
     </p>
     <p class="pbody">
-      Once I saw that the <code>strcat_s</code> function in the source code was called with a variable <code>env_path</code>, the
+      Once I saw that the <code>strcat_s</code> function in the source code was called with a variable
+      <code>env_path</code>, the
       solution
       clicked. My environment path variable is greater than 2047 characters, leading to the crash. Changes were made
       to init.cpp to resolve this issue and those will be included in OT's new release. This

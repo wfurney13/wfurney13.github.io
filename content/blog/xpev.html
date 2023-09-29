@@ -2,64 +2,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../../styles.css">
 
- <head>
-    <title>wfurney.com</title>
-	<a href="./otcd.html" style="margin-bottom: -3em; margin-top: .8em; margin-left: -100em;">Previous Post  — Open Track Crash Diagnosis</a>
-    <h1 class="hindex">
-      <a href="../../index.html">William Furney</a>
-    </h1>
-    <p class="pheader">
-      <a href="https://www.linkedin.com/in/william-furney-39a418154/"
-        >Linkedin</a
-      >
-      | <a href="https://github.com/wfurney13/">GitHub</a>
-	  <br>
-	  <a href="mailto:william@wfurney.com">william@wfurney.com</a>
-    </p>
-  </head>
+<head>
+  <title>wfurney.com</title>
+  <a href="./otcd.html" style="margin-bottom: -3em; margin-top: .8em; margin-left: -100em;">Previous Post — Open Track
+    Crash Diagnosis</a>
+  <a href="./marg.html" style="margin-bottom: -3em; margin-top: .8em; margin-right: -100em;">Next Post — Marginalia to
+    the Masses</a>
+  <h1 class="hindex">
+    <a href="../../index.html">William Furney</a>
+  </h1>
+  <p class="pheader">
+    <a href="https://www.linkedin.com/in/william-furney-39a418154/">Linkedin</a>
+    | <a href="https://github.com/wfurney13/">GitHub</a>
+    <br>
+    <a href="mailto:william@wfurney.com">william@wfurney.com</a>
+  </p>
+</head>
 
 <body>
-<div>	
+  <div>
     <p class="pbody">
-Xonsh is a "Python-powered, cross-platform, Unix-gazing shell language and command prompt."<sup><a class="note"; href="#fn1"> 1</a></sup>
+      Xonsh is a "Python-powered, cross-platform, Unix-gazing shell language and command prompt."<sup><a class="note" ;
+          href="#fn1"> 1</a></sup>
 
-Many operations that are clumsy in Windows natively are comparatively simple using the Xonsh shell. Let's take a look at one example, modifying the PATH environment variable. <br><br>
+      Many operations that are clumsy in Windows natively are comparatively simple using the Xonsh shell. Let's take a
+      look at one example, modifying the PATH environment variable. <br><br>
 
-In Windows 11 without Xonsh, modifying your PATH environment variable can be done in either the "Environment Variables" window or by updating this key in the Registry Editor:</p><blockquote class="minimal"> HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment</blockquote> 
-<p class="pbody">
-With Xonsh, the variable is stored directly in a list of strings called $PATH.<sup><a class="note"; href="#fn2"> 2</a></sup>
-Part of the magic of Xonsh is that we can use built-in Python methods against this variable! 
-First, I need to add this line in my Xonsh configuration file:</p><blockquote class="minimal">$UPDATE_OS_ENVIRON = True</blockquote> <p class="pbody"> When True, the OS environment will always be updated when the xonsh environment changes. This gives us a more efficient way to interact with the PATH.<sup><a class="note"; href="#fn3"> 3</a></sup>
-For example, to remove the most recent entry from the list I can use the pop() method:
-</p><blockquote>$PATH.pop(-1)</blockquote>	
-<p class="pbody">Now let's say I change my mind. I can use the append() method and add the path back to the list:
+      In Windows 11 without Xonsh, modifying your PATH environment variable can be done in either the "Environment
+      Variables" window or by updating this key in the Registry Editor:</p>
+    <blockquote class="minimal"> HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+    </blockquote>
+    <p class="pbody">
+      With Xonsh, the variable is stored directly in a list of strings called $PATH.<sup><a class="note" ; href="#fn2">
+          2</a></sup>
+      Part of the magic of Xonsh is that we can use built-in Python methods against this variable!
+      First, I need to add this line in my Xonsh configuration file:</p>
+    <blockquote class="minimal">$UPDATE_OS_ENVIRON = True</blockquote>
+    <p class="pbody"> When True, the OS environment will always be updated when the xonsh environment changes. This
+      gives us a more efficient way to interact with the PATH.<sup><a class="note" ; href="#fn3"> 3</a></sup>
+      For example, to remove the most recent entry from the list I can use the pop() method:
+    </p>
+    <blockquote>$PATH.pop(-1)</blockquote>
+    <p class="pbody">Now let's say I change my mind. I can use the append() method and add the path back to the list:
 
-</p><blockquote>$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote><p class="pbody">
+    </p>
+    <blockquote>$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote>
+    <p class="pbody">
 
-How cool is that? Other methods would work as well of course, but these two seem the most useful to me at the moment. <br><br>Some other great examples of pythonobash can be found in this overview video.<sup><a class="note"; href="#fn4"> 4</a></sup>
-</p>
-</div>
+      How cool is that? Other methods would work as well of course, but these two seem the most useful to me at the
+      moment. <br><br>Some other great examples of pythonobash can be found in this overview video.<sup><a class="note"
+          ; href="#fn4"> 4</a></sup>
+    </p>
+  </div>
 </body>
 
 
 ∅
-	<p class="prefs">
-	[1] - <a id="fn1"; target="_blank"; href="https://xon.sh/">https://xon.sh/</a><br>
-	[2] - <a id="fn2"; target="_blank"; href="https://xon.sh/tutorial.html#environment-variables">https://xon.sh/tutorial.html#environment-variables</a><br>
-	[3] - <a id="fn3"; target="_blank"; href="https://xon.sh/envvars.html#update-os-environ">https://xon.sh/envvars.html#update-os-environ</a><br>
-	[4] - <a id="fn4"; target="_blank"; href="https://www.youtube.com/watch?v=x85LSyCxiw8">https://www.youtube.com/watch?v=x85LSyCxiw8</a><br>
-	</p>
-	
+<p class="prefs">
+  [1] - <a id="fn1" ; target="_blank" ; href="https://xon.sh/">https://xon.sh/</a><br>
+  [2] - <a id="fn2" ; target="_blank" ;
+    href="https://xon.sh/tutorial.html#environment-variables">https://xon.sh/tutorial.html#environment-variables</a><br>
+  [3] - <a id="fn3" ; target="_blank" ;
+    href="https://xon.sh/envvars.html#update-os-environ">https://xon.sh/envvars.html#update-os-environ</a><br>
+  [4] - <a id="fn4" ; target="_blank" ;
+    href="https://www.youtube.com/watch?v=x85LSyCxiw8">https://www.youtube.com/watch?v=x85LSyCxiw8</a><br>
+</p>
+
 
 <footer>
- <hr class="footer" >
-    <a href="https://www.norightsreserved.org/" target="_blank" rel="noopener noreferrer"><img
-            src="https://www.norightsreserved.org/img/NoRightsReserved-tiny.png" alt="No Rights Reserved."> </a>
+  <hr class="footer">
+  <a href="https://www.norightsreserved.org/" target="_blank" rel="noopener noreferrer"><img
+      src="https://www.norightsreserved.org/img/NoRightsReserved-tiny.png" alt="No Rights Reserved."> </a>
 
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img
-            alt="Creative Commons License" style="border-width:0"
-            src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-    <hr class="footer">
-    <footer>
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img
+      alt="Creative Commons License" style="border-width:0"
+      src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+  <hr class="footer">
+  <footer>
 
 </html>
