@@ -41,7 +41,11 @@
    a:visited:hover {
      color: rgb(124, 124, 124);
    }
- }	
+ }	 
+ 
+ a {
+  text-decoration: none;
+}
 	
  body {
    display: -webkit-flex;
