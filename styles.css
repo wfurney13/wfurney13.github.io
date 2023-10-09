@@ -171,3 +171,8 @@
    padding-top: 5px;
    padding-bottom: 5px;
  }
+
+.linebreak {
+color: rgba(170, 189, 206, 0.482);
+opacity: 50%;
+ }
