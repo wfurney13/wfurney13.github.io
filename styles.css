@@ -1,6 +1,7 @@
  @viewport {
    width: device-width;
-   zoom: 1
+   initial-scale: 1;
+   zoom: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,6 +72,7 @@
    font-weight: 450;
    font-family: "Adobe Caslon";
    line-height: 1.4;
+   margin: 0;
  }
 
  blockquote {
@@ -176,3 +178,7 @@
 color: rgba(170, 189, 206, 0.482);
 opacity: 50%;
  }
+
+ .inline {
+  text-decoration: underline;
+   }

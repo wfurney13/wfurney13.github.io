@@ -1,8 +1,7 @@
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../../styles.css">
-
 <head>
+  
   <title>wfurney.com</title>
   <h1 class="hindex">
     <a href="../../index.html">William Furney</a>
@@ -22,7 +21,7 @@
         program for games like DCS, Star Citizen and Microsoft Flight Simulator. I used WinDbg to analyze the crash
         files and then extrapolated to draw conclusions
         based on the source code. Here's a bit about what I learned. This is all documented in the <a
-          href="https://github.com/opentrack/opentrack/issues/1661" class="inline">issue #1661 on
+          href="https://github.com/opentrack/opentrack/issues/1661"; target="_blank"; class="inline">issue #1661 on
           GitHub</a>.</em></p>
     <p style="text-align: center">∅</p>
     <p class="pemp" style="text-align: center">
@@ -46,7 +45,7 @@
       The message associated with this code is
       <code>"Security check failure or stack buffer overrun"</code>. Next, I check whether
       other users of the app have experienced similar issues, and I find the other issues mentioned in <a
-        href="https://github.com/opentrack/opentrack/issues/1661" class="inline">#1661</a>.
+        href="https://github.com/opentrack/opentrack/issues/1661"; target="_blank"; class="inline">#1661</a>.
 
       Without much else to go on I begin to debug and analyze the crash using WinDbg. Here are the results from the
       initial WinDbg trace:
