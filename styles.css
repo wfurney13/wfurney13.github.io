@@ -1,15 +1,15 @@
 @media (prefers-color-scheme: dark) {
   body {
-    color: #fff;
-    background: #190c19;
+    color: rgba(255, 254, 254, 0.699);
+    background: #160a0a;
   }
 
   a:link {
-    color: rgb(81, 119, 196);
+    color: rgba(255, 254, 254, 0.699);
   }
 
   a:visited {
-    color: rgb(81, 119, 196);
+    color: rgba(255, 254, 254, 0.699);
   }
 
   a:hover,
@@ -30,7 +30,7 @@
 @media (prefers-color-scheme: light) {
   body {
     color: rgb(0, 0, 0);
-    background: rgb(217, 217, 217);
+    background: rgba(230, 222, 222, 0.861);
   }
 
   a:link {
@@ -80,36 +80,35 @@ body {
   justify-content: flex-start;
   width: 100%;
   min-height: 100%;
-  font-weight: 450;
-  font-family: "Adobe Caslon";
-  line-height: 1.8;
+  font-family: "Times New Roman", sans-serif;
+  line-height: 1.5;
   margin: 0;
 }
 
 blockquote {
   text-align: left;
-  font-size: large;
+  font-size: medium;
   width: fit-content;
   font-style: italic;
+  font-family: "Liberation Mono", "Consolas", sans-serif;
   padding: 0.3em 0.3em 0.3em 0.3em;
   margin-inline-start: 35%;
   margin-inline-end: 35%;
   margin-left: 36%;
   margin-right: 36%;
   border-right: none;
-  line-height: 1.8;
-  border-left: .5em solid #8a8813;
+  line-height: 1.5;
 
 }
 
 code {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Liberation Mono", "Consolas", sans-serif;
   font-style: bold;
   font-size: medium;
 }
 
 footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   margin-bottom: 0.5em;
 }
 
@@ -175,12 +174,14 @@ li {
 
 
 .pemp {
-  font-style: bold;
-  font-size: large;
+  font-size: x-large;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  ;
 }
 
 .linebreak {
@@ -226,8 +227,8 @@ li {
 
 @media only screen and (min-width: 1200px) {
   .pbody {
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 38%;
+    padding-right: 38%;
     padding-top: 5px;
     padding-bottom: 5px;
 
@@ -239,19 +240,19 @@ li {
   }
 
   .prefs {
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 38%;
+    padding-right: 38%;
   }
 
 
   .pemp {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 38%;
+    padding-right: 38%;
   }
 
   blockquote {
-    margin-left: 36%;
-    margin-right: 36%;
+    margin-left: 41%;
+    margin-right: 41%;
   }
 
 }

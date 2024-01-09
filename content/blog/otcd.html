@@ -1,7 +1,8 @@
 <html>
 <link rel="stylesheet" href="../../styles.css">
+
 <head>
-  
+
   <title>wfurney.com</title>
   <h1 class="hindex">
     <a href="../../index.html">William Furney</a>
@@ -10,21 +11,22 @@
     <a href="https://www.linkedin.com/in/william-furney-39a418154/">Linkedin</a>
     | <a href="https://github.com/wfurney13/">GitHub</a>
     <br>
-    <a href="mailto:william@wfurney.com">mail@wfurney.com</a>
+    <a href="mailto:mail@wfurney.com">mail@wfurney.com</a>
   </p>
 </head>
 
 <body>
   <div>
+    <p class="pemp">OpenTrack crash troubleshooting</p>
     <p class="pbody"> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS
         head-tracking
         program for games like DCS, Star Citizen and Microsoft Flight Simulator. I used WinDbg to analyze the crash
         files and then extrapolated to draw conclusions
         based on the source code. Here's a bit about what I learned. This is all documented in the <a
-          href="https://github.com/opentrack/opentrack/issues/1661"; target="_blank"; class="inline">issue #1661 on
+          href="https://github.com/opentrack/opentrack/issues/1661" ; target="_blank" ; class="inline">issue #1661 on
           GitHub</a>.</em></p>
     <p style="text-align: center">∅</p>
-    <p class="pemp" style="text-align: center">
+    <p class="pemp">
       The Issue
     </p>
     <p class="pbody">OpenTrack starts and then immediately closes. This also happens on the portable version and in
@@ -32,7 +34,7 @@
       OT releases. There is no error message or information displayed to the user about why the crash occurs. A
       crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> when the application exits.</p>
 
-    <p class="pemp" style="text-align: center">
+    <p class="pemp">
       The Resolution
     </p>
 
@@ -45,7 +47,7 @@
       The message associated with this code is
       <code>"Security check failure or stack buffer overrun"</code>. Next, I check whether
       other users of the app have experienced similar issues, and I find the other issues mentioned in <a
-        href="https://github.com/opentrack/opentrack/issues/1661"; target="_blank"; class="inline">#1661</a>.
+        href="https://github.com/opentrack/opentrack/issues/1661" ; target="_blank" ; class="inline">#1661</a>.
 
       Without much else to go on I begin to debug and analyze the crash using WinDbg. Here are the results from the
       initial WinDbg trace:
