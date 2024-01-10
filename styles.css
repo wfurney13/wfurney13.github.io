@@ -206,16 +206,32 @@ li {
 
 .pemp {
   font-size: x-large;
-  padding-left: 15%;
-  padding-right: 15%;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  ;
+}
+
+.pemplong {
+  font-size: x-large;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
   font-weight: bold;
   font-family: Helvetica, sans-serif;
   ;
 }
 
 .linebreak {
+  color: rgba(170, 189, 206, 0.482);
+  opacity: 50%;
+}
+
+.linebreakcontent {
   color: rgba(170, 189, 206, 0.482);
   opacity: 50%;
 }
@@ -233,6 +249,21 @@ li {
     padding-bottom: 10px;
   }
 
+  .linebreakcontent {
+    margin-left: 20%;
+    width: 35em;
+  }
+
+  .libody {
+    font-size: medium;
+    padding-right: 20%;
+  }
+
+  .ulbody {
+    list-style-type: circle;
+    padding-left: 21%;
+  }
+
   .pheader {
     padding-left: 30%;
     padding-right: 30%;
@@ -242,12 +273,6 @@ li {
     padding-left: 20%;
     padding-right: 20%;
     font-size: x-small;
-  }
-
-
-  .pemp {
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   blockquote {
@@ -266,6 +291,23 @@ li {
 
   }
 
+  .linebreakcontent {
+    margin-left: 38%;
+    width: 45em;
+  }
+
+
+  .libody {
+    font-size: medium;
+    padding-right: 38%;
+  }
+
+  .ulbody {
+    list-style-type: circle;
+    padding-left: 39%;
+    padding-right: 25%;
+  }
+
   .pheader {
     padding-left: 30%;
     padding-right: 30%;
@@ -281,6 +323,11 @@ li {
   .pemp {
     padding-left: 38%;
     padding-right: 38%;
+  }
+
+  .pemplong {
+    padding-left: 38%;
+    padding-right: 35%;
   }
 
   blockquote {
