@@ -56,6 +56,10 @@
 
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
 a {
   text-decoration: none;
 }
@@ -94,7 +98,7 @@ body {
   justify-content: flex-start;
   width: 100%;
   min-height: 100%;
-  font-family: "Times New Roman", sans-serif;
+  font-family: 'Lora', serif;
   line-height: 1.5;
   margin: 0;
   color: rgba(255, 254, 254, 0.699);
@@ -106,7 +110,7 @@ blockquote {
   font-size: medium;
   width: fit-content;
   font-style: italic;
-  font-family: "Liberation Mono", "Consolas", sans-serif;
+  font-family: 'Source Code Pro', monospace;
   padding: 0.3em 0.3em 0.3em 0.3em;
   margin-inline-start: 35%;
   margin-inline-end: 35%;
@@ -118,12 +122,18 @@ blockquote {
   color: #fff;
   -moz-box-shadow: 0px 5px 15px #190c19;
   -webkit-box-shadow: 0px 5px 15px #190c19;
-  box-shadow: 0px 5px 15px #190c19;
+  box-shadow: 0px 5px 0px #190c19;
 
 }
 
+pre {
+  font-size: medium;
+  font-style: italic;
+  font-family: 'Source Code Pro', monospace;
+}
+
 code {
-  font-family: "Liberation Mono", "Consolas", sans-serif;
+  font-family: 'Source Code Pro', monospace;
   font-style: bold;
   font-size: medium;
 }
@@ -175,7 +185,7 @@ li {
   padding-right: 20%;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: larger;
+  font-size: medium;
 }
 
 .pheader {
@@ -231,6 +241,7 @@ li {
   .prefs {
     padding-left: 20%;
     padding-right: 20%;
+    font-size: x-small;
   }
 
 
@@ -263,6 +274,7 @@ li {
   .prefs {
     padding-left: 38%;
     padding-right: 38%;
+    font-size: small;
   }
 
 
