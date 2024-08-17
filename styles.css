@@ -1,74 +1,14 @@
-/* @media (prefers-color-scheme: dark) {
-  body {
-    color: rgba(255, 254, 254, 0.699);
-    background: #030101;
-  }
-
-  a:link {
-    color: rgba(255, 254, 254, 0.699);
-  }
-
-  a:visited {
-    color: rgba(255, 254, 254, 0.699);
-  }
-
-  a:hover,
-  a:visited:hover {
-    color: #def;
-  }
-
-  blockquote {
-    background: #130b19;
-    color: #fff;
-    -moz-box-shadow: 0px 5px 15px #190c19;
-    -webkit-box-shadow: 0px 5px 15px #190c19;
-    box-shadow: 0px 5px 15px #190c19;
-  }
-
-} */
-
-/* @media (prefers-color-scheme: light) {
-  body {
-    color: rgb(0, 0, 0);
-    background: rgba(230, 222, 222, 0.861);
-  }
-
-  a:link {
-    color: rgb(0, 0, 0);
-  }
-
-  a:visited {
-    color: rgb(0, 0, 0);
-  }
-
-  a:hover,
-  a:visited:hover {
-    color: rgb(124, 124, 124);
-  }
-
-  blockquote {
-    background: rgb(217, 217, 217);
-    color: black;
-    -moz-box-shadow: 0px 5px 15px #ccc;
-    -webkit-box-shadow: 0px 5px 15px #ccc;
-    box-shadow: 0px 5px 15px #ccc;
-  }
-
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 
 a {
   text-decoration: none;
-}
-
-a:link {
   color: rgba(255, 254, 254, 0.699);
 }
 
-a:visited {
+a:link {
+  text-decoration: none;
   color: rgba(255, 254, 254, 0.699);
 }
 
@@ -77,6 +17,40 @@ a:visited:hover {
   color: #def;
 }
 
+a.inline {
+ border-bottom: 1px dotted white;
+}
+
+span.hide {
+display: none;
+background: grey;
+width: fit-content; 
+}
+
+a.prev {
+font-size: x-large;
+opacity: 0.5;
+}
+a.prev:hover span.hide {
+display: block;
+font-size: small;
+}
+a.prev:hover {
+opacity: 1;
+color: #def;
+}
+a.next {
+font-size: x-large;
+opacity: 0.5;
+}
+a.next:hover {
+opacity: 1;
+color: #def;
+}
+a.next:hover .hide {
+display: block;
+font-size: small;
+}
 
 body {
   display: -webkit-flex;
@@ -99,7 +73,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-family: 'Lora', serif;
-  line-height: 1.5;
+  line-height: 1.75;
   margin: 0;
   color: rgba(255, 254, 254, 0.699);
   background: #030101;
@@ -174,7 +148,6 @@ li {
   text-align: justify;
 }
 
-
 .footer {
   width: 5.5em;
   margin-left: 0;
@@ -206,7 +179,6 @@ li {
   font-size: medium;
 }
 
-
 .pemp {
   font-size: x-large;
   padding-top: 5px;
@@ -237,10 +209,6 @@ li {
 .linebreakcontent {
   color: rgba(170, 189, 206, 0.482);
   opacity: 50%;
-}
-
-.inline {
-  text-decoration: underline;
 }
 
 @media only screen and (min-width: 600px) {
@@ -312,7 +280,7 @@ li {
 
 @media only screen and (min-width: 1200px) {
   .pbody {
-    padding-left: 38%;
+    padding-left: 25%;
     padding-right: 25%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -320,7 +288,7 @@ li {
   }
   
     .pbodylong {
-  padding-left: 20%;
+  padding-left: 25%;
   padding-right: 0%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -365,14 +333,14 @@ li {
   }
 
   .prefs {
-    padding-left: 38%;
+    padding-left: 25%;
     padding-right: 38%;
     font-size: small;
   }
 
 
   .pemp {
-    padding-left: 38%;
+    padding-left: 25%;
     padding-right: 10%;
   }
 
