@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 
 a {
@@ -16,6 +16,11 @@ a:hover,
 a:visited:hover {
   color: #def;
 }
+
+span {
+font-family: 'Lora', serif;
+}
+
 
 a.inline {
  border-bottom: 1px dotted white;
@@ -161,6 +166,7 @@ li {
 
 .hindex {
   margin-bottom: -0.5em;
+  font-family: 'Lora', serif;
 }
 
 .note {
@@ -362,7 +368,6 @@ li {
     padding-right: 38%;
     font-size: small;
   }
-
 
   .pemp {
     padding-left: 25%;
