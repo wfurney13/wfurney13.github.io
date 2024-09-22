@@ -4,12 +4,12 @@
 
 a {
   text-decoration: none;
-  color: rgba(255, 254, 254, 0.699);
+  color: f5e9f3;
 }
 
 a:link {
   text-decoration: none;
-  color: rgba(255, 254, 254, 0.699);
+  color: f5e9f3;
 }
 
 a:hover,
@@ -91,7 +91,7 @@ body {
   font-family: 'Lora', serif;
   line-height: 1.75;
   margin: 0;
-  color: rgba(255, 254, 254, 0.699);
+  color: f5e9f3;
   background: #030101;
 }
 
@@ -108,7 +108,7 @@ blockquote {
   margin-right: 36%;
   border-right: none;
   line-height: 1.5;
-  background: #130b19;
+  background: #19001f;
   color: #fff;
   -moz-box-shadow: 0px 5px 15px #190c19;
   -webkit-box-shadow: 0px 5px 15px #190c19;
@@ -120,7 +120,7 @@ blockquote {
 {
 font-family: 'Lora', serif;
 font-style: regular;
-color: rgba(255, 254, 254, 0.699);
+color: f5e9f3;
   -moz-box-shadow: 0px 0px 0px #190c19;
   -webkit-box-shadow: 0px 0px 0px #190c19;
   box-shadow: 0px 0px 0px #190c19;
