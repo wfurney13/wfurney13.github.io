@@ -4,17 +4,17 @@
 
 a {
   text-decoration: none;
-  color: f5e9f3;
+  color: 000000;
 }
 
 a:link {
   text-decoration: none;
-  color: f5e9f3;
+  color: 000000;
 }
 
 a:hover,
 a:visited:hover {
-  color: #def;
+  color: #b31af0;
 }
 
 span {
@@ -23,7 +23,7 @@ font-family: 'Lora', serif;
 
 
 a.inline {
- border-bottom: 1px dotted white;
+ border-bottom: 1px dotted #b31af0;
 }
 
 img.contain {
@@ -39,7 +39,8 @@ font-size: medium;
 
 span.hide {
 display: none;
-background: grey;
+background: b0b0b0;
+color: 000000;
 width: fit-content; 
 }
 
@@ -91,8 +92,8 @@ body {
   font-family: 'Lora', serif;
   line-height: 1.75;
   margin: 0;
-  color: f5e9f3;
-  background: #030101;
+  color: 000000;
+  background: #edede6;
 }
 
 blockquote {
@@ -108,11 +109,11 @@ blockquote {
   margin-right: 36%;
   border-right: none;
   line-height: 1.5;
-  background: #19001f;
-  color: #fff;
-  -moz-box-shadow: 0px 5px 15px #190c19;
-  -webkit-box-shadow: 0px 5px 15px #190c19;
-  box-shadow: 0px 5px 0px #190c19;
+  background: #d6d6d6;
+  color: #000000;
+  -moz-box-shadow: 0px 5px 15px #d6d6d6;
+  -webkit-box-shadow: 0px 5px 15px #d6d6d6;
+  box-shadow: 0px 5px 0px #d6d6d6;
 
 }
 
@@ -120,7 +121,7 @@ blockquote {
 {
 font-family: 'Lora', serif;
 font-style: regular;
-color: f5e9f3;
+color: 000000;
   -moz-box-shadow: 0px 0px 0px #190c19;
   -webkit-box-shadow: 0px 0px 0px #190c19;
   box-shadow: 0px 0px 0px #190c19;
@@ -233,12 +234,12 @@ li {
 }
 
 .linebreak {
-  color: rgba(170, 189, 206, 0.482);
+  color: 000000;
   opacity: 50%;
 }
 
 .linebreakcontent {
-  color: rgba(170, 189, 206, 0.482);
+  color: 000000;
   opacity: 50%;
 }
 
@@ -247,8 +248,8 @@ li {
 .blockquote_simple {
   padding: 0;
   line-height: 1.5;
-  background: #030101;
-  color: #fff;
+  background: #19001f;
+  color: #000000;
   margin-left: 0;
   margin-right: 0;
 
@@ -336,7 +337,7 @@ li {
   
   .linebreak {
 	margin-right: 0%;
-  color: rgba(170, 189, 206, 0.482);
+  color: 000000;
   opacity: 50%;
 }
 
