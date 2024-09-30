@@ -29,7 +29,7 @@ ss_dateinserted DATETIME NOT NULL,
 ss_wkr_id INT NOT NULL,
 ss_amount DECIMAL(10,2) NOT NULL,
 CONSTRAINT FK_STORESALES_WORKER FOREIGN KEY (ss_wkr_id)
-REFERENCES WORKERS (wkr_id)
+REFERENCES dbo.WORKERS (wkr_id)
 );</pre>
 </blockquote>
 
