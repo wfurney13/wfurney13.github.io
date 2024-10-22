@@ -194,7 +194,7 @@ li {
   padding-right: 20%;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: medium;
+  font-size: 18px;
 }
 
 .small_link{
@@ -317,11 +317,10 @@ li {
 
 @media only screen and (min-width: 1200px) {
   .pbody {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 30%;
+    padding-right: 30%;
     padding-top: 5px;
     padding-bottom: 5px;
-
   }
   
     .pbodylong {
@@ -337,7 +336,6 @@ li {
     padding-right: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-
   }
   
   .linebreak {
@@ -390,5 +388,4 @@ li {
     margin-right: 41%;
   }
  
-
 }
