@@ -102,7 +102,7 @@ body {
 
 blockquote {
   text-align: left;
-  font-size: medium;
+  font-size: 14px;
   width: fit-content;
   font-style: italic;
   font-family: 'Source Code Pro', monospace;
@@ -123,17 +123,17 @@ blockquote {
 
 .regfont
 {
-font-family: 'Lora', serif;
-font-style: regular;
-color: 000000;
-  -moz-box-shadow: 0px 0px 0px #190c19;
-  -webkit-box-shadow: 0px 0px 0px #190c19;
-  box-shadow: 0px 0px 0px #190c19;
-   margin-inline-start: 20%;
-  margin-inline-end: 20%;
-  margin-left: 25%;
-  margin-right: 25%;
-  line-height: 1.75;
+    font-family: 'Lora', serif;
+    font-style: regular;
+    color: 000000;
+    -moz-box-shadow: 0px 0px 0px #190c19;
+    -webkit-box-shadow: 0px 0px 0px #190c19;
+    box-shadow: 0px 0px 0px #190c19;
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
+    margin-left: 30%;
+    margin-right: 41%;
+    line-height: 1.75;
 }
 
 pre {
@@ -194,7 +194,7 @@ li {
   padding-right: 20%;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .small_link{
@@ -216,7 +216,7 @@ li {
 }
 
 .pemp {
-  font-size: x-large;
+  font-size: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15%;
@@ -318,17 +318,9 @@ li {
 @media only screen and (min-width: 1200px) {
   .pbody {
     padding-left: 30%;
-    padding-right: 30%;
+    padding-right: 45%;
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-  
-    .pbodylong {
-  padding-left: 25%;
-  padding-right: 0%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: medium;
   }
   
     .pbodyleft {
@@ -374,7 +366,7 @@ li {
   }
 
   .pemp {
-    padding-left: 25%;
+    padding-left: 30%;
     padding-right: 10%;
   }
 
@@ -384,7 +376,7 @@ li {
   }
 
   blockquote {
-    margin-left: 38%;
+    margin-left: 30%;
     margin-right: 41%;
   }
  
