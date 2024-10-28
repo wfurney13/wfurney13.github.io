@@ -1,34 +1,20 @@
-<html>
-<link rel="stylesheet" href="../css/core.css">
-
-<head>
-
-    <title>wfurney.com</title>
-    <h1 class="hindex">
-        <a href="../index.html"> William Furney</a>
-    </h1>
-    <p class="pheader">
-        <a href="mailto:mail@wfurney.com">mail@wfurney.com</a>
-    </p>
-</head>
-
-<body>
-    <div>
-
-        <p class="pemp"><a class="prev" href="marg.html"><span class="hide">Previous post: Marginalia Search</span>
-                < </a>Make YouTube Usable (Again)<a class="next" href="wwwtsql.html"> > <span class="hide">Next Post:
+---
+layout: none
+---
+<p class="pemp"><a class="prev" href="/articles/marg/"><span class="hide">Previous post: Marginalia Search</span>
+                < </a>Make YouTube Usable (Again)<a class="next" href="/articles/wwwtsql/"> > <span class="hide">Next Post:
                             What's all wrong with this SQL?</span> </a></p>
-        <p class="pbody">
+<p class="pbody">
             Have you ever noticed that YouTube is way worse than it used to be? It's time we got rid of YouTube shorts,
-            sponsors, clickbait titles and thumbnails, and those <a class="inline" ; target="_blank" ;
-                href="marg.html">insane comments.</a> The goal of this post is to help you
+            sponsors, clickbait titles and thumbnails, and those <a class="inline"  target="_blank" 
+                href="/articles/marg/">insane comments.</a> The goal of this post is to help you
             enhance YouTube so that it resembles the good old days... or at least makes it usable.
         </p>
-        <p class="pemp"><a class="inline" ; target="_blank" ; href="https://www.youtube.com/watch?v=Sa47RKkZV8E" ;
+<p class="pemp"><a class="inline" target="_blank" href="https://www.youtube.com/watch?v=Sa47RKkZV8E"
                 style="text-decoration: none">Warning</a></p>
-        <p class="pbody">This post will help you install browser extensions. Browser extensions are a top threat
+<p class="pbody">This post will help you install browser extensions. Browser extensions are a top threat
             vector for malicious software and often contain "anonymous" data collection routines about your browsing
-            activity <sup><a class="note" ; href="#fn1">1</a></sup>. You should only install browser extensions that
+            activity <sup><a class="note"  href="#fn1">1</a></sup>. You should only install browser extensions that
             <i>you</i> trust. I make no claims about the safety of these particular extensions. I would recommend
             having
             as few browser extensions as you can to minimize risk. I always ensure that they are open source, heavily
@@ -38,8 +24,8 @@
             the
             closed issues as well). If in doubt about a browser extension, don't install it and move on.
         </p>
-        <p class="pemp">Remove YouTube Shorts</p>
-        <p class="pbody">I don't think this type of
+<p class="pemp">Remove YouTube Shorts</p>
+<p class="pbody">I don't think this type of
             short form content is good and so opt to remove it entirely. Note that the filter can be modified if you
             only want
             to remove shorts from the homepage or something like that. To do this we will make use of UBlock Origin's
@@ -47,7 +33,7 @@
             filter rules.
         <ul class="ulbody">
             <li class="libody">
-                Copy the text of <a class="inline" ; target="_blank" ;
+                Copy the text of <a class="inline"  target="_blank" 
                     href="https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt">this filter
                     rule</a>
             </li>
@@ -56,26 +42,26 @@
             <li class="libody">Select "My Filters" and paste in the filter list</li><br>
         </ul>
         </p>
-        <p class="pbody">
+<p class="pbody">
             YouTube shorts should now be removed. For a step-by-step guide on this process check out this <a
-                class="inline" target="_blank" ; href="https://www.youtube.com/watch?v=Nfr0uIU2lDI">great
-                video</a><sup><a class="note" ; href="#fn"> 2</a></sup>.
+                class="inline" target="_blank"  href="https://www.youtube.com/watch?v=Nfr0uIU2lDI">great
+                video</a><sup><a class="note"  href="#fn"> 2</a></sup>.
         </p>
-        <p class="pemp">Reddit Comments for YouTube</p>
-        <p class="pbody">As the old adage goes, the only thing worse than Reddit comments is YouTube comments. OK, maybe
+<p class="pemp">Reddit Comments for YouTube</p>
+<p class="pbody">As the old adage goes, the only thing worse than Reddit comments is YouTube comments. OK, maybe
             I just made that up, but I still think it's true. I've used two extensions for this in the past <a
-                class="inline" target="_blank" ; href="https://github.com/odensc/karamel">Karamel</a> and <a
-                class="inline" target="_blank" ; href="https://github.com/Xyl-AU/Reddit-Comments-for-YouTube">Reddit
+                class="inline" target="_blank"  href="https://github.com/odensc/karamel">Karamel</a> and <a
+                class="inline" target="_blank"  href="https://github.com/Xyl-AU/Reddit-Comments-for-YouTube">Reddit
                 Comments for
                 YouTube</a>. Both seem to work well and give you an option to see all the reddit threads for a video as
             well as the YouTube comments. </p>
-        <p class="pemp">SponsorBlock</p>
-        <p class="pbody">Not too long ago YouTube videos didn't have sponsors. Ajay's <a class="inline" ;
-                target="_blank" ; href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a> helps by crowdsourcing
+<p class="pemp">SponsorBlock</p>
+<p class="pbody">Not too long ago YouTube videos didn't have sponsors. Ajay's <a class="inline" 
+                target="_blank"  href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a> helps by crowdsourcing
             sponsored portions of videos (which seems to work really well) and auto-skipping them. It also has some
             other cool features, like skipping to highlights of the video and skipping intros and outros.</p>
-        <p class="pemp">De-Arrow</p>
-        <p class="pbody">By the same author as (and built on top of) SponsorBlock, <a class="inline" ; target="_blank" ;
+<p class="pemp">De-Arrow</p>
+<p class="pbody">By the same author as (and built on top of) SponsorBlock, <a class="inline"  target="_blank" 
                 href="https://github.com/ajayyy/DeArrow">De-Arrow</a> is another extension (currently in beta) that uses
             crowdsourcing to
             replace video titles and thumbnails with their crowdsourced equivalents or a fallback. There are lots of
@@ -88,34 +74,24 @@
             that really only nerds are submitting title and thumbnail replacement suggestions, but hopefully it will
             trend toward
             a better experience when more users come onboard. </p>
-        <hr class="linebreakcontent">
-        <p class="pbody"><b>Update 6/9/2024:</b>
+<hr>
+<p class="pbody"><b>Update 6/9/2024:</b>
             Also
-            check out the <a class="inline" ; target="_blank" ;
+            check out the <a class="inline"  target="_blank" 
                 href="https://addons.mozilla.org/en-US/firefox/addon/youtube-addon/">Improve Tube</a> extension for
             some
             additional UI enhancement options. I haven't used this one long enough to officially recommend it
-            though.<br><br>See <a class="inline" ; target="_blank" ;
+            though.<br><br>See <a class="inline"  target="_blank" 
                 href="https://gist.githubusercontent.com/wfurney13/a677938536ecfa1a2e787f4f4cbe497b/raw/1740838d0154f5ca4d79fc0349f603d4427da902/uofhidebuttons">this
                 gist</a> for additional uBlock origin filters to hide the Join, Thanks, Clip, Share, Save and Download
             buttons in the video player.
         </p>
-    </div>
-</body>
+
 ∅
 <p class="prefs" id="fn">
-    [1] - <a id="fn1" ; target="_blank" ; href="https://sponsor.ajay.app/emails/">List of emails [ajay] has received
+    [1] - <a id="fn1"  target="_blank"  href="https://sponsor.ajay.app/emails/">List of emails [ajay] has received
         about inserting malware into [his] extension</a><br>
     [2] - Funny highlight from this video. "My thing with shorts is I feel like I get dumber every time I watch them". I
     couldn't agree more.<br>
 </p>
 
-<footer>
-    <hr class="footer">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer"><img
-            alt="Creative Commons License" style="border-width:0"
-            src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-    <hr class="footer">
-    <footer>
-
-</html>

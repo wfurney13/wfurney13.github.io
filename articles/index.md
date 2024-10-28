@@ -1,5 +1,6 @@
 ---
 permalink: /articles/
+layout: articles
 ---
 
 <html>

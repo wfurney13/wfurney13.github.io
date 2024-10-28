@@ -1,23 +1,10 @@
-<html>
-<link rel="stylesheet" href="../css/core.css">
-
-<head>
-
-  <title>wfurney.com</title>
-  <h1 class="hindex">
-    <a href="../index.html"> William Furney</a>
-  </h1>
-  <p class="pheader">
-    <a href="mailto:mail@wfurney.com">mail@wfurney.com</a>
-  </p>
-</head>
-
-<body>
-  <div>
-    <p class="pemp"><a class="prev" href="whynottrump.html"><span class="hide">Previous post: Why Not Trump</span>
+---
+layout: none
+---
+<p class="pemp"><a class="prev" href="/articles/whynottrump/"><span class="hide">Previous post: Why Not Trump</span>
         < </a>
           Replace Start Menu on Windows
-          <p class="pbody">
+  <p class="pbody">
             I use two main tools to replace the start menu. The first is <a class="inline"
               href="https://learn.microsoft.com/en-us/windows/powertoys/run">Powertoys Run</a> (or <a class="inline"
               href="https://www.flowlauncher.com/">Flow Launcher</a>) and the second is <a class="inline"
@@ -26,18 +13,18 @@
             Flow Launcher. This allows me to use a hotkey to search for any file on my system, and because of the way
             Everything indexing works, it's very fast.
           </p>
-          <p class="pbody">
+  <p class="pbody">
             I also use this Autohotkey Script to disable the Windows key, but retain its combinations (such as WIN+Arrow
             Keys):
-          <blockquote>
+      <blockquote>
             ;Disable LWin press and retain its combos
             <br>~LWin::vk07
           </blockquote>
     </p>
-    <p class="pbody">
+<p class="pbody">
       And this script to hide the taskbar, in combination with the vanilla auto-hide functionality. This hides the
       taskbar or shows it again when CTRL + ALT + = is pressed.
-    <blockquote>
+<blockquote>
       ^!=:: ;Ctrl + Alt + = : Hide taskbar
       <br>If WinExist("ahk_class Shell_TrayWnd")
       <br>{
@@ -51,7 +38,7 @@
       <br>}
     </blockquote>
     </p>
-    <p class="pbody">
+<p class="pbody">
       You can find the rest of my Autohotkey Scripts <a class="inline"
         href="https://github.com/wfurney13/dotfiles/blob/master/ahk/hotkeys.ahk">on my Github.</a> I've tried to leave
       comments so that it's obvious what everything does. If you want a more stylish taskbar replacement, I recommend <a
@@ -59,16 +46,3 @@
         href="https://github.com/glzr-io/glazewm">GlazeWM</a>. I may make a seperate post about Zebar and GlazeWM when I
       have a better configuration and Zebar has been updated some more.
     </p>
-
-  </div>
-</body>
-* * *
-<footer>
-  <hr class="footer">
-  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img
-      alt="Creative Commons License" style="border-width:0"
-      src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-  <hr class="footer">
-  <footer>
-
-</html>

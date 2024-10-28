@@ -27,6 +27,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wfurney.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  wfurney13
 
+markdown: kramdown
+highlighter: rouge
+
+
 # Build settings
 theme: minima
 plugins:
@@ -34,7 +38,11 @@ plugins:
   - jekyll-redirect-from
 
 #redirector
-#collections:
+collections:
+  blog_posts:
+    output: true
+  
+    
 #  my_collection:
 #    output: true
 #    permalink: /:collection/:name/

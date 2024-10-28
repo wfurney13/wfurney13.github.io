@@ -1,27 +1,14 @@
-<html>
-<link rel="stylesheet" href="../css/core.css">
-
-<head>
-
-  <title>wfurney.com</title>
-  <h1 class="hindex">
-    <a href="../index.html"> William Furney</a>
-  </h1>
-  <p class="pheader">
-    <a href="mailto:mail@wfurney.com">mail@wfurney.com</a>
-  </p>
-</head>
-
-<body>
-  <div>
-    <p class="pemp"><a class="prev" href="24tte.html"><span class="hide">Previous post: 2024 Trip to Europe</span>
-        < </a>Why Not Trump <a class="next" href="replacestart.html">><span class="hide">Next post: Replace Windows
+---
+layout: none
+---
+<p class="pemp"><a class="prev" href="/articles/24tte/"><span class="hide">Previous post: 2024 Trip to Europe</span>
+        < </a>Why Not Trump <a class="next" href="/articles/replacestart/">><span class="hide">Next post: Replace Windows
               Start Menu</span></a></p>
-    <p class="pbody">
+<p class="pbody">
       Why I am not voting for Donald Trump. In no particular order. I will mark a (K) next to any of these traits I also
       feel are shared by his opponent.
 
-    <blockquote class="regfont">
+<blockquote class="regfont">
       * Despotic and incredulous nature
       <br>* Not encouraging additional financial support for Ukraine
       <br>* Stating he would resolve the war in Ukraine after he is elected, but before he is sworn-in, showing a lack
@@ -56,13 +43,13 @@
       <br>
     </blockquote>
     </p>
-    <p class="pbody">
+<p class="pbody">
       <br>
       The list above is incomplete, in terms of content and citation, but all the points within are either easily
       searchable or obviously true.<br><br>I will leave you with this speech (underline emphasis my own) from Benjamin
       Franklin on the importance of compromise in the Constitution.
       <br><br>
-    <blockquote class="regfont">
+<blockquote class="regfont">
       Closing Speech at the Constitutional Convention (1787)
       <br><br>
       I confess that I do not entirely approve of this Constitution at present, but Sir, I am not sure I shall never
@@ -107,15 +94,5 @@
         our Unanimity, put his Name to this Instrument.</u>
     </blockquote>
     </p>
-  </div>
-</body>
-* * *
-<footer>
-  <hr class="footer">
-  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img
-      alt="Creative Commons License" style="border-width:0"
-      src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-  <hr class="footer">
-  <footer>
 
-</html>
+* * *
