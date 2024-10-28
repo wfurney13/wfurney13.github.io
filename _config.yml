@@ -23,7 +23,7 @@ email: mail@wfurney.com
 description: >- # this means to ignore newlines until "baseurl:"
   tech blog
 domain: wfurney.com
-baseurl: "/wfurney13.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wfurney.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  wfurney13
 
@@ -31,6 +31,13 @@ github_username:  wfurney13
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
+
+#redirector
+#collections:
+#  my_collection:
+#    output: true
+#    permalink: /:collection/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
