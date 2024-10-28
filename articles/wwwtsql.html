@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../css/core.css">
+
+<head>
+
+  <title>wfurney.com</title>
+  <h1 class="hindex">
+    <a href="../index.html"> William Furney</a>
+  </h1>
+  <p class="pheader">
+    <a href="mailto:mail@wfurney.com">mail@wfurney.com</a>
+  </p>
+</head>
+
+<body>
+  <div>
+    <p class="pemp"><a class="prev" href="useyt.html"><span class="hide">Previous post: Make YouTube Usable
+          (Again)</span>
+        < </a>What's all wrong with this SQL?<a class="next" href="24tte.html"> > <span class="hide">Next Post: 2024
+              Trip to Europe</span> </a></p>
+    </p>
+    <p>
+      <a href='../img/wwwsql.png' target='_blank'><img src='../img/wwwsql.png' border='0' alt='wwwsql' /></a>
+      <br><br>
+      <code>There's a syntax error, but let's ignore that.</code>
+    </p>
+    <p>
+      How many more issues can you spot with this SQL? Here's how I would re-write it.
+    <blockquote style="margin-left: 20%">
+      <pre>
+CREATE TABLE dbo.STORE_SALES (
+ss_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+ss_dateinserted DATETIME NOT NULL,
+ss_wkr_id INT NOT NULL,
+ss_amount DECIMAL(10,2) NOT NULL,
+CONSTRAINT FK_STORESALES_WORKER FOREIGN KEY (ss_wkr_id)
+REFERENCES dbo.WORKERS (wkr_id)
+);</pre>
+    </blockquote>
+
+    </p>
+    <p>
+      And yes, <a class="inline" href='https://postimg.cc/Jth9sycN' target='_blank'>ChatGPT can spot the FLOAT
+        issue.</a>
+    </p>
+  </div>
+</body>
+* * *
+<footer>
+  <hr class="footer">
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"><img
+      alt="Creative Commons License" style="border-width:0"
+      src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+  <hr class="footer">
+  <footer>
+
+</html>
