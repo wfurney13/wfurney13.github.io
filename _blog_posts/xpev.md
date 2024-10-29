@@ -6,7 +6,7 @@ layout: none
         < </a>The Xonsh Shell<a class="next" href="/articles/marg/"> > <span class="hide">Next Post: Marginalia</span> </a>
     </p>
     
-<p class="pbody">
+<p>
       Xonsh is a "Python-powered, cross-platform, Unix-gazing shell language and command prompt."
 <sup><a class="note" href="/articles/xpev#fn1"> 1</a></sup>
       Many operations that are clumsy in Windows natively are comparatively simple using the Xonsh shell. Let's take a
@@ -14,18 +14,18 @@ layout: none
       environment variable can be done in either the "Environment
       Variables" window or by updating this key 
 <sup><a class="note" href="/articles/xpev#fn2"> 2</a></sup></p>
-<p class="pbody">
+<p>
       With Xonsh, the variable is stored directly in a list of strings called <code>$PATH</code>.<sup><a class="note" href="/articles/xpev#fn3">3</a></sup> Part of the magic of Xonsh is that we can use this variable for built-in Python methods.First, I need to add this line in my Xonsh configuration file:</p><blockquote>$UPDATE_OS_ENVIRON = True</blockquote>
-<p class="pbody">
+<p>
       When <code>True</code>, the OS environment will always be updated when the xonsh environment changes. This
       gives us a more efficient way to interact with the PATH.<sup><a class="note" href="/articles/xpev#fn4"> 4</a></sup>
       For example, to remove the most recent entry from the list I can use the <code>pop()</code> method:</p>
 <blockquote>$PATH.pop(-1)</blockquote>
-<p class="pbody"> Now let's say I change my mind. I can use the <code>append()</code> method and add the path back to the list:</p>
+<p> Now let's say I change my mind. I can use the <code>append()</code> method and add the path back to the list:</p>
     
 <blockquote>$PATH.append('C:\\Users\\wfurn\\Speedtest-cli')</blockquote>
 
-<p class="pbody">
+<p>
       How cool is that? Other methods would work as well of course, but these two seem the most useful to me at the
       moment. <br><br>Some other great examples of pythonobash can be found in this overview video.<sup><a class="note"
           href="/articles/xpev#fn5"> 5</a></sup></p>

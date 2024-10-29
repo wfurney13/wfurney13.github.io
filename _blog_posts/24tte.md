@@ -5,11 +5,11 @@ layout: none
 <p class="pemp"><a class="prev" href="/articles/wwwtsql/"><span class="hide">Previous post: What's wrong with this SQL?</span>
         < </a>2024 Trip to Europe<a class="next" href="/articles/whynottrump/"> > <span class="hide">Next Post: Why Not
               Trump</span> </a></p>
-<p class="pbody">
+<p>
       Here are some of my favorite pictures from my recent trip to Europe.
     </p>
 
-<p class="pbody">
+<p>
       <code class="caption">Rubjerg Knude Lighthouse in Denmark</code>
       <img class="contain" src="/img/Europe/denmark.JPEG">
 

@@ -3,7 +3,7 @@ layout: none
 ---
 <p class="pemp">OpenTrack Crash Troubleshooting<a class="next" href="/articles/xpev/"> > <span class="hide">Next Post: The
           Xonsh Shell</span> </a></p>
-<p class="pbody"> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS
+<p> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS
         head-tracking
         program for games like DCS, Star Citizen and Microsoft Flight Simulator. I used WinDbg to analyze the crash
         files and then extrapolated to draw conclusions
@@ -14,7 +14,7 @@ layout: none
 <p class="pemp">
       The Issue
     </p>
-<p class="pbody">OpenTrack starts and then immediately closes. This also happens on the portable version and in
+<p>OpenTrack starts and then immediately closes. This also happens on the portable version and in
       prior
       OT releases. There is no error message or information displayed to the user about why the crash occurs. A
       crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> when the application exits.</p>
@@ -23,7 +23,7 @@ layout: none
       The Resolution
     </p>
 
-<p class="pbody">
+<p>
       First, to try and get a sense of what the problem actually is, I open the crash dump file in Visual Studio to
       look for an exception message or error code. I find this error:
     </p>
@@ -32,7 +32,7 @@ layout: none
 Exception Message: 0xc0000409
 ```
 
-<p class="pbody">
+<p>
       The message associated with this code is
       <code>"Security check failure or stack buffer overrun"</code>. Next, I check whether
       other users of the app have experienced similar issues, and I find the other issues mentioned in <a
@@ -57,7 +57,7 @@ WARNING: Stack unwind information not available. Following frames may be wrong
 0019fe50 00000000 ... ntdll!_RtlUserThreadStart+0x1b
 ```
 
-<p class="pbody">This didn't really help me much. A few hours of troubleshooting later, I took to the repo's "issues" page with
+<p>This didn't really help me much. A few hours of troubleshooting later, I took to the repo's "issues" page with
       the stack details and not much else. That's when I learned from the repo's owner that OT contains a handy
       debug package with symbols from the application stored as .pdb (Program Database) files. Essentially these files
       allow you to see more details around the operations being performed in the trace. After loading the .pdb files in
@@ -81,7 +81,7 @@ STACK_TEXT:
 000000f1`d52ff880 00000000`00000000 ... ntdll!RtlUserThreadStart+0x28
 ```
 
-<p class="pbody">
+<p>
       The issue is much more clear with this stack. Notice the call to the function <code>strcat_s</code>. If we
       search the OT repo for this function, we can find the source of the issue:
 </p>
@@ -99,7 +99,7 @@ for (const char* ptr : contents)
 ```
 
 
-<p class="pbody">
+<p>
       An invalid parameter is passed to the <code>strcat_s</code> function, which means there's a problem with my
       PATH
       environment variable. It can only have a max of 2047 characters. I'll let my comment from the GitHub issue
@@ -112,7 +112,7 @@ for (const char* ptr : contents)
         which is why we see the c0000409 exception for stack buffer overrun."
       </em>
     </p>
-<p class="pbody">
+<p>
       Once I saw that the <code>strcat_s</code> function in the source code was called with a variable
       <code>env_path</code>, the
       solution

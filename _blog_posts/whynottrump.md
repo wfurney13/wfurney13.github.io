@@ -4,7 +4,7 @@ layout: none
 <p class="pemp"><a class="prev" href="/articles/24tte/"><span class="hide">Previous post: 2024 Trip to Europe</span>
         < </a>Why Not Trump <a class="next" href="/articles/replacestart/">><span class="hide">Next post: Replace Windows
               Start Menu</span></a></p>
-<p class="pbody">
+<p>
       Why I am not voting for Donald Trump. In no particular order. I will mark a (K) next to any of these traits I also
       feel are shared by his opponent.
 
@@ -43,7 +43,7 @@ layout: none
       <br>
     </blockquote>
     </p>
-<p class="pbody">
+<p>
       <br>
       The list above is incomplete, in terms of content and citation, but all the points within are either easily
       searchable or obviously true.<br><br>I will leave you with this speech (underline emphasis my own) from Benjamin

@@ -316,16 +316,11 @@ a:visited:hover {
   color: #000000;
 }
 
-a.inline:hover {
+a:hover {
   color: #d4d000;
-}
-
-
-
-
-a.inline {
   border-bottom: 1px dotted #000000;
 }
+
 
 img.contain {
   height: 12%;
@@ -458,9 +453,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  margin-top: -100;
-}
+h2 {}
 
 ul {
   list-style-type: none;
@@ -490,13 +483,16 @@ li {
   margin-left: 0;
 }
 
-.pbody {
+p {
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 14px;
 }
+
+/* .pbody {
+
+} */
 
 .small_link {
   font-size: x-small;
@@ -517,7 +513,7 @@ li {
   font-size: medium;
 }
 
-.pemp {
+h2 {
   font-size: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -567,12 +563,19 @@ li {
 
   }
 
-  .pbody {
+  p {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  /* .pbody {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+  } */
 
   .pbodyleft {
     padding-left: 2%;
@@ -623,7 +626,14 @@ li {
 }
 
 @media only screen and (min-width: 1200px) {
-  .pbody {
+  /* .pbody {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  } */
+
+  p {
     padding-left: 30%;
     padding-right: 30%;
     padding-top: 5px;
@@ -672,7 +682,7 @@ li {
     font-size: small;
   }
 
-  .pemp {
+  h2 {
     padding-left: 30%;
     padding-right: 10%;
   }

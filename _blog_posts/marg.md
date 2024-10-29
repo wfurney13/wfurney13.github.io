@@ -5,7 +5,7 @@ layout: none
 <p class="pemp"><a class="prev" href="/articles/xpev/"><span class="hide">Previous post: The Xonsh Shell</span>
         < </a>Marginalia Search<a class="next" href="/articles/useyt/"> > <span class="hide">Next Post: Make YouTube Usable
               (Again)</span> </a></p>
-<p class="pbody">
+<p>
       Earlier this week the NASA mission OSIRIS-REx returned a sample of the asteroid Bennu to Earth. The YouTube
       comments on
       many such stories really need to be seen to be believed.<sup><a id="fn1ref" class="note"  href="/articles/marg#fn1">1</a></sup>
@@ -27,7 +27,7 @@ layout: none
       jab"), or whatever else.
     </p>
 <p class="pemp">AI development will exacerbate this in myriad ways</p>
-<p class="pbody">Even if all future development of LLMs,
+<p>Even if all future development of LLMs,
       StableDiffusion, DeepFake technologies, etc, were halted today, we are still in for a world of
       trouble with what's <a class="inline"  target="_blank" 
         href="https://x.com/8teAPi/status/1706520893621784780?s=20">already</a> <a class="inline"
@@ -46,7 +46,7 @@ layout: none
       litany of
       listicles, AI generated spam, and bloatsites.
     </p>
-<p class="pbody">
+<p>
       <em>"The purpose of [marginalia search] is primarily to help you find and navigate the non-commercial parts
         of the internet. Where, for sure, you’ll find crack-pots, communists, libertarians, anarchists, strange
         religious

@@ -4,7 +4,7 @@ layout: none
 <p class="pemp"><a class="prev" href="/articles/marg/"><span class="hide">Previous post: Marginalia Search</span>
                 < </a>Make YouTube Usable (Again)<a class="next" href="/articles/wwwtsql/"> > <span class="hide">Next Post:
                             What's all wrong with this SQL?</span> </a></p>
-<p class="pbody">
+<p>
             Have you ever noticed that YouTube is way worse than it used to be? It's time we got rid of YouTube shorts,
             sponsors, clickbait titles and thumbnails, and those <a class="inline"  target="_blank" 
                 href="/articles/marg/">insane comments.</a> The goal of this post is to help you
@@ -12,7 +12,7 @@ layout: none
         </p>
 <p class="pemp"><a class="inline" target="_blank" href="https://www.youtube.com/watch?v=Sa47RKkZV8E"
                 style="text-decoration: none">Warning</a></p>
-<p class="pbody">This post will help you install browser extensions. Browser extensions are a top threat
+<p>This post will help you install browser extensions. Browser extensions are a top threat
             vector for malicious software and often contain "anonymous" data collection routines about your browsing
             activity <sup><a class="note"  href="#fn1">1</a></sup>. You should only install browser extensions that
             <i>you</i> trust. I make no claims about the safety of these particular extensions. I would recommend
@@ -25,7 +25,7 @@ layout: none
             closed issues as well). If in doubt about a browser extension, don't install it and move on.
         </p>
 <p class="pemp">Remove YouTube Shorts</p>
-<p class="pbody">I don't think this type of
+<p>I don't think this type of
             short form content is good and so opt to remove it entirely. Note that the filter can be modified if you
             only want
             to remove shorts from the homepage or something like that. To do this we will make use of UBlock Origin's
@@ -42,13 +42,13 @@ layout: none
             <li class="libody">Select "My Filters" and paste in the filter list</li><br>
         </ul>
         </p>
-<p class="pbody">
+<p>
             YouTube shorts should now be removed. For a step-by-step guide on this process check out this <a
                 class="inline" target="_blank"  href="https://www.youtube.com/watch?v=Nfr0uIU2lDI">great
                 video</a><sup><a class="note"  href="#fn"> 2</a></sup>.
         </p>
 <p class="pemp">Reddit Comments for YouTube</p>
-<p class="pbody">As the old adage goes, the only thing worse than Reddit comments is YouTube comments. OK, maybe
+<p>As the old adage goes, the only thing worse than Reddit comments is YouTube comments. OK, maybe
             I just made that up, but I still think it's true. I've used two extensions for this in the past <a
                 class="inline" target="_blank"  href="https://github.com/odensc/karamel">Karamel</a> and <a
                 class="inline" target="_blank"  href="https://github.com/Xyl-AU/Reddit-Comments-for-YouTube">Reddit
@@ -56,12 +56,12 @@ layout: none
                 YouTube</a>. Both seem to work well and give you an option to see all the reddit threads for a video as
             well as the YouTube comments. </p>
 <p class="pemp">SponsorBlock</p>
-<p class="pbody">Not too long ago YouTube videos didn't have sponsors. Ajay's <a class="inline" 
+<p>Not too long ago YouTube videos didn't have sponsors. Ajay's <a class="inline" 
                 target="_blank"  href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a> helps by crowdsourcing
             sponsored portions of videos (which seems to work really well) and auto-skipping them. It also has some
             other cool features, like skipping to highlights of the video and skipping intros and outros.</p>
 <p class="pemp">De-Arrow</p>
-<p class="pbody">By the same author as (and built on top of) SponsorBlock, <a class="inline"  target="_blank" 
+<p>By the same author as (and built on top of) SponsorBlock, <a class="inline"  target="_blank" 
                 href="https://github.com/ajayyy/DeArrow">De-Arrow</a> is another extension (currently in beta) that uses
             crowdsourcing to
             replace video titles and thumbnails with their crowdsourced equivalents or a fallback. There are lots of
@@ -75,7 +75,7 @@ layout: none
             trend toward
             a better experience when more users come onboard. </p>
 <hr>
-<p class="pbody"><b>Update 6/9/2024:</b>
+<p><b>Update 6/9/2024:</b>
             Also
             check out the <a class="inline"  target="_blank" 
                 href="https://addons.mozilla.org/en-US/firefox/addon/youtube-addon/">Improve Tube</a> extension for
