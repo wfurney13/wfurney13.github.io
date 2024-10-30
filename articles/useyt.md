@@ -7,23 +7,14 @@ layout: article
 <p>
             Have you ever noticed that YouTube is way worse than it used to be? It's time we got rid of YouTube shorts,
             sponsors, clickbait titles and thumbnails, and those <a class="inline"  target="_blank" 
-                href="/articles/marg/">insane comments.</a> The goal of this post is to help you
+                href="/articles/marg">insane comments.</a> The goal of this post is to help you
             enhance YouTube so that it resembles the good old days... or at least makes it usable.
         </p>
 <h2><a class="inline" target="_blank" href="https://www.youtube.com/watch?v=Sa47RKkZV8E"
                 style="text-decoration: none">Warning</a></h2>
-<p>This post will help you install browser extensions. Browser extensions are a top threat
-            vector for malicious software and often contain "anonymous" data collection routines about your browsing
-            activity <sup><a class="note"  href="#fn1">1</a></sup>. You should only install browser extensions that
-            <i>you</i> trust. I make no claims about the safety of these particular extensions. I would recommend
-            having
-            as few browser extensions as you can to minimize risk. I always ensure that they are open source, heavily
-            utilized, and read through the source code and issues pages on Github. I would not install even an open
-            source extension if the code
-            looks obsfucated or is too complicated to understand -- or if there are concerning issues (be sure to check
-            the
-            closed issues as well). If in doubt about a browser extension, don't install it and move on.
-        </p>
+
+This post will help you install browser extensions. Browser extensions are a top threat vector for malicious software and often contain "anonymous" data collection routines about your browsing activity [^1]. You should only install browser extensions that <i>you</i> trust. I make no claims about the safety of these particular extensions. I would recommend having as few browser extensions as you can to minimize risk. I always ensure that they are open source, heavily utilized, and read through the source code and issues pages on Github. I would not install even an open source extension if the code looks obsfucated or is too complicated to understand -- or if there are concerning issues (be sure to check the closed issues as well). If in doubt about a browser extension, don't install it and move on.
+
 
 ## Remove YouTube Shorts
 
@@ -32,7 +23,7 @@ I don't think this type of short form content is good and so opt to remove it en
 - Copy the text of <a href = "https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt">this filter rule</a>  
 - Click on UBlock Origin in the extensions menu and select "settings" to open the dashboard  
 - Select "My Filters" and paste in the filter list  
-YouTube shorts should now be removed. For a step-by-step guide on this process check out this [great video](https://www.youtube.com/watch?v=Nfr0uIU2lDI) <sup><a class="note"  href="#fn"> 2</a></sup>.
+YouTube shorts should now be removed. For a step-by-step guide on this process check out this [great video](https://www.youtube.com/watch?v=Nfr0uIU2lDI) [^2].
 
 ## Reddit Comments for YouTube
 
@@ -59,9 +50,6 @@ By the same author as (and built on top of) SponsorBlock, <a class="inline"  tar
         </p>
 
 <hr>
-<p class="prefs" id="fn">
-    [1] - <a id="fn1"  target="_blank"  href="https://sponsor.ajay.app/emails/">List of emails [ajay] has received
-        about inserting malware into [his] extension</a><br>
-    [2] - Funny highlight from this video. "My thing with shorts is I feel like I get dumber every time I watch them". I
-    couldn't agree more.<br>
-</p>
+
+[^1]: List of emails [ajay] has received [about inserting malware into [his] extension](https://sponsor.ajay.app/emails/)
+[^2]: Funny highlight from this video. "My thing with shorts is I feel like I get dumber every time I watch them". I couldn't agree more.
