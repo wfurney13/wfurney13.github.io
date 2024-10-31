@@ -11,7 +11,6 @@ Take a look at this *gorgeous* SQL I found on the internet. *Forget DATETIME sto
 
 <img src="/img/wwwsql.png">
                         
-
 Here's how I would re-write it:
 
 ```sql
@@ -25,5 +24,5 @@ REFERENCES dbo.WORKERS (wkr_id)
 );
 ```
 
-## And yes, [ChatGPT](https://postimg.cc/Jth9sycN) can spot the FLOAT issue.
+## And yes, [ChatGPT](/img/Chat-GPT-sees-the-issue.png) can spot the FLOAT issue.
 
