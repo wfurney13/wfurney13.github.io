@@ -1,13 +1,15 @@
 ---
 layout: article
 ---
+* auto-gen TOC:
+{:toc}
 
-<h2>
-<a class="prev" href="/articles/xpev"><span class="hide">Previous post: The Xonsh Shell</span>
-        < </a>Marginalia Search<a class="next" href="/articles/useyt"> > <span class="hide">Next Post: Make YouTube Usable
-              (Again)</span> </a>
-</h2>
+<a class="prev" href="/articles/xpev"> < </a>
+<a class="next" href="/articles/useyt"> > </a>
 
+## Marginalia Search 
+
+## Return to Earth
 Earlier this week the NASA mission OSIRIS-REx returned a sample of the asteroid Bennu to Earth. The YouTube
 comments on many such stories really need to be seen to be believed [^1].
 
@@ -24,6 +26,8 @@ Another such discussion involved an artist's rendition of the probe gathering th
 Even if all future development of LLMs, StableDiffusion, DeepFake technologies, etc, were halted today, we are still in for a world of trouble with what's [already](https://x.com/8teAPi/status/1706520893621784780?s=20) [available](https://x.com/PatrickJBlum/status/1706354581989626323).
 
 People won't only believe that AI generated content is human-generated, but they'll believe, with probably increasing ferocity, that *real* content has been faked. If the majority of content on the internet is still created by humans, [that won't be the case](https://arstechnica.com/information-technology/2023/09/ai-generated-books-force-amazon-to-cap-ebook-publications-to-3-per-day/) for long.
+
+## Enter Marginalia
       
 With outside-the-box approaches we can develop tools to help fight against some of this in the short-term. Search engines like [Marginalia](https://www.marginalia.nu/marginalia-search/about/) can be used to do 'reverse SEO' searching to find some old-school human content. This type of search is a welcome reprieve from the modern internet's litany of listicles, AI generated spam, and bloatsites.
 

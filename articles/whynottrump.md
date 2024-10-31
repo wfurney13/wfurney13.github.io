@@ -1,11 +1,14 @@
 ---
 layout: article
 ---
+* auto-gen TOC:
+{:toc}
+<a class="prev" href="/articles/24tte"> < </a>
+<a class="next" href="/articles/replacestart"> > </a>
 
-<h2><a class="prev" href="/articles/24tte"><span class="hide">Previous post: 2024 Trip to Europe</span>
-        < </a>Why Not Trump<a class="next" href="/articles/replacestart"> > <span class="hide">Next Post: Replace Start Menu</span> </a></h2>
+## Why I am not voting for Donald Trump
 
-## Why I am not voting for Donald Trump. In no particular order. I will mark a (K) next to any of these traits I also feel are shared by his opponent.
+In no particular order. I will mark a (K) next to any of these traits I also feel are shared by his opponent.
 
 >*Despotic and incredulous nature  
 >*Not encouraging additional financial support for Ukraine  
@@ -35,8 +38,8 @@ The list above is incomplete, in terms of content and citation, but all the poin
 
 I will leave you with this speech (underline emphasis my own) from Benjamin Franklin on the importance of compromise in the Constitution.
 
-
->Closing Speech at the Constitutional Convention (1787) <br><br> 
+## Closing Speech at the Constitutional Convention (1787)
+ 
 >I confess that I do not entirely approve of this Constitution at present, but Sir, I am not sure I shall never approve it: <u>For having lived long, I have experienced many Instances of being oblig’d, by better Information or fuller Consideration, to change Opinions even on important Subjects, which I once thought right, but found to be otherwise.  
 >It is therefore that the older I grow the more apt I am to doubt my own Judgment and to pay more Respect to the Judgment of others.</u>  <br><br>
 >Most Men indeed as well as most Sects in Religion, think themselves in Possession of all Truth, and that wherever others differ from them it is so far Error. [Sir Richard] Steele, a Protestant, in a Dedication tells the Pope, that the only Difference between our two Churches in their Opinions of the Certainty of their Doctrine, is, the Romish Church is infallible, and the Church of England is never in the Wrong. But tho’ many private Persons think almost as highly of their own Infallibility, as that of their Sect, few express it so naturally as a certain French lady, who in a little Dispute with her Sister, said, I don’t know how it happens, Sister, but I meet with no body but myself that’s always in the right.  <br><br>

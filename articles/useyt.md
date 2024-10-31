@@ -1,9 +1,13 @@
 ---
 layout: article
 ---
-<h2><a class="prev" href="/articles/marg"><span class="hide">Previous post: Marginalia Search</span>
-                < </a>Make YouTube Usable (Again)<a class="next" href="/articles/wwwtsql"> > <span class="hide">Next Post:
-                            What's all wrong with this SQL?</span> </a></h2>
+* auto-gen TOC:
+{:toc}
+<a class="prev" href="/articles/marg"> < </a>
+<a class="next" href="/articles/wwwtsql"> > </a>
+
+## Make YouTube Usable (Again)
+
 <p>
             Have you ever noticed that YouTube is way worse than it used to be? It's time we got rid of YouTube shorts,
             sponsors, clickbait titles and thumbnails, and those <a class="inline"  target="_blank" 
@@ -37,17 +41,9 @@ Not too long ago YouTube videos didn't have sponsors. Ajay's <a class="inline" t
 By the same author as (and built on top of) SponsorBlock, <a class="inline"  target="_blank" href="https://github.com/ajayyy/DeArrow">De-Arrow</a> is another extension (currently in beta)that uses crowdsourcing to replace video titles and thumbnails with their crowdsourced equivalents or a fallback. There are lots of options here as well. For example, you can choose to replace uppercase words in titles with Title Case, remove all emojis from titles, replace thumbnails with random screenshots from the middle of the video, and more. Fair warning that this one seems to be a bit quirkier with the crowdsourcing than SponsorBlock. That makes sense when you consider that really only nerds are submitting title and thumbnail replacement suggestions, but hopefully it will trend toward a better experience when more users come onboard.
 
 <hr>
-<p><b>Update 6/9/2024:</b>
-            Also
-            check out the <a class="inline"  target="_blank" 
-                href="https://addons.mozilla.org/en-US/firefox/addon/youtube-addon/">Improve Tube</a> extension for
-            some
-            additional UI enhancement options. I haven't used this one long enough to officially recommend it
-            though.<br><br>See <a class="inline"  target="_blank" 
-                href="https://gist.githubusercontent.com/wfurney13/a677938536ecfa1a2e787f4f4cbe497b/raw/1740838d0154f5ca4d79fc0349f603d4427da902/uofhidebuttons">this
-                gist</a> for additional uBlock origin filters to hide the Join, Thanks, Clip, Share, Save and Download
-            buttons in the video player.
-        </p>
+
+## Update 6/9/2024:
+Also check out the <a class="inline"  target="_blank"  href="https://addons.mozilla.org/en-US/firefox/addon/youtube-addon/">Improve Tube</a> extension for some additional UI enhancement options. I haven't used this one long enough to officially recommend it though.<br><br>See <a class="inline"  target="_blank" href="https://gist.githubusercontent.com/wfurney13/a677938536ecfa1a2e787f4f4cbe497b/raw/1740838d0154f5ca4d79fc0349f603d4427da902/uofhidebuttons"> this gist</a> for additional uBlock origin filters to hide the Join, Thanks, Clip, Share, Save and Download buttons in the video player.
 
 <hr>
 

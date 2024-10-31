@@ -1,11 +1,13 @@
 ---
 layout: article
 ---
+* auto-gen TOC:
+{:toc}
 
-<h2><a class="prev" href="/articles/whynottrump"><span class="hide">Previous post: Why Not Trump</span>
-        < </a>
-          Replace Start Menu on Windows
-</h2>
+<a class="prev" href="/articles/whynottrump"> < </a>
+<a class="next"> > </a>
+
+## Replace Start Menu on Windows
 
 I use two main tools to replace the start menu. The first is [Powertoys Run](https://learn.microsoft.com/en-us/windows/powertoys/run) (or [Flow Launcher](https://www.flowlauncher.com/) and the second is
 [Everything for Windows](https://www.voidtools.com/downloads/).

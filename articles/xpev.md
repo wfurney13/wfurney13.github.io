@@ -1,10 +1,13 @@
 ---
 layout: article
 ---
+* auto-gen TOC:
+{:toc}
 
-<h2><a class="prev" href="/articles/otcd"><span class="hide">Previous post: OpenTrack Crash Troubleshooting</span>
-        < </a>The Xonsh Shell<a class="next" href="/articles/marg"> > <span class="hide">Next Post: Marginalia</span> </a>
-    </h2>
+<a class="prev" href="/articles/otcd">< </a><a class="next" href="/articles/marg"> > </a>
+
+## Xonsh
+
     
 Xonsh is a "Python-powered, cross-platform, Unix-gazing shell language and command prompt."[^1]Many operations that are clumsy in Windows natively are comparatively simple using the Xonsh shell. Let's take a look at one example, modifying the PATH environment variable.In Windows 11 without Xonsh, modifying your PATH environment variable can be done in either the "Environment Variables" window or by updating this key 
 [^2].

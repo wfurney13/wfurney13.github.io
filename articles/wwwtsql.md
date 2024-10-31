@@ -1,15 +1,16 @@
 ---
 layout: article
 ---
+* auto-gen TOC:
+{:toc}
+<a class="prev" href="/articles/useyt">< </a><a class="next" href="/articles/24tte"> > </a>
 
-<h2><a class="prev" href="/articles/useyt"><span class="hide">Previous post: Make YouTube Usable
-          (Again)</span>
-        < </a>What's all wrong with this SQL?<a class="next" href="/articles/24tte"> > <span class="hide">Next Post: 2024
-              Trip to Europe</span> </a></h2>
+## What's all wrong with this SQL?
 
-![SQL](/img/wwwsql.png)
+Take a look at this *gorgeous* SQL I found on the internet. *Forget DATETIME store Day as a varchar and (wait, what?) How many more issues can you spot?*  
 
-How many more issues can you spot?
+<img src="/img/wwwsql.png">
+                        
 
 Here's how I would re-write it:
 
@@ -24,4 +25,5 @@ REFERENCES dbo.WORKERS (wkr_id)
 );
 ```
 
-And yes, [ChatGPT](https://postimg.cc/Jth9sycN) can spot the FLOAT issue.
+## And yes, [ChatGPT](https://postimg.cc/Jth9sycN) can spot the FLOAT issue.
+

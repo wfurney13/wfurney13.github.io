@@ -1,8 +1,14 @@
 ---
 layout: article
 ---
-<h2>OpenTrack Crash Troubleshooting<a class="next" href="/articles/xpev"> > <span class="hide">Next Post: The
-          Xonsh Shell</span> </a></h2>
+* auto-gen TOC:
+{:toc}
+
+<a class="prev"> < </a>
+<a class="next" href="/articles/xpev"> > </a>
+
+## OpenTrack Crash Troubleshooting
+
 <p> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS
         head-tracking
         program for games like DCS, Star Citizen and Microsoft Flight Simulator. I used WinDbg to analyze the crash
@@ -11,17 +17,15 @@ layout: article
           href="https://github.com/opentrack/opentrack/issues/1661"  target="_blank"  class="inline">issue #1661 on
           GitHub</a>.</em></p>
 <p style="text-align: center">∅</p>
-<p class="pemp">
-      The Issue
-    </p>
+
+## The Issue
+
 <p>OpenTrack starts and then immediately closes. This also happens on the portable version and in
       prior
       OT releases. There is no error message or information displayed to the user about why the crash occurs. A
       crash dump file is stored in <code><em>\AppData\Local\CrashDumps</em></code> when the application exits.</p>
 
-<p class="pemp">
-      The Resolution
-    </p>
+## Troubleshooting
 
 <p>
       First, to try and get a sense of what the problem actually is, I open the crash dump file in Visual Studio to
@@ -37,10 +41,10 @@ Exception Message: 0xc0000409
       <code>"Security check failure or stack buffer overrun"</code>. Next, I check whether
       other users of the app have experienced similar issues, and I find the other issues mentioned in <a
         href="https://github.com/opentrack/opentrack/issues/1661"  target="_blank"  class="inline">#1661</a>.
-
-      Without much else to go on I begin to debug and analyze the crash using WinDbg. Here are the results from the
-      initial WinDbg trace:
 </p>
+
+Without much else to go on I begin to debug and analyze the crash using WinDbg. Here are the results from the initial WinDbg trace:
+
 
 ```
 STACK_TEXT:
@@ -58,12 +62,11 @@ WARNING: Stack unwind information not available. Following frames may be wrong
 ```
 
 <p>This didn't really help me much. A few hours of troubleshooting later, I took to the repo's "issues" page with
-      the stack details and not much else. That's when I learned from the repo's owner that OT contains a handy
-      debug package with symbols from the application stored as .pdb (Program Database) files. Essentially these files
-      allow you to see more details around the operations being performed in the trace. After loading the .pdb files in
-      the WinDbg symbols section, I ran the back trace again, and was presented with this stack. Check out how many more
-      details we can see in the trace now:
-    </p>
+      the stack details and not much else.</p>
+      
+## The Resolution      
+      
+That's when I learned from the repo's owner that OT contains a handy debug package with symbols from the application stored as .pdb (Program Database) files. Essentially these files allow you to see more details around the operations being performed in the trace. After loading the .pdb files in the WinDbg symbols section, I ran the back trace again, and was presented with this stack. Check out how many more details we can see in the trace now:
 
 ```
 STACK_TEXT:
@@ -81,10 +84,8 @@ STACK_TEXT:
 000000f1`d52ff880 00000000`00000000 ... ntdll!RtlUserThreadStart+0x28
 ```
 
-<p>
       The issue is much more clear with this stack. Notice the call to the function <code>strcat_s</code>. If we
       search the OT repo for this function, we can find the source of the issue:
-</p>
 
 ```cpp
 for (const char* ptr : contents)
