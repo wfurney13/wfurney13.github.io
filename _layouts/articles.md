@@ -1,5 +1,15 @@
 {% include css_link.html %}
-{% include blog_head.html %}
+
+<head>
+    <title>wfurney.com</title>
+    <h1>
+        <a class = "no_border" href="/index.html">William Furney</a>
+    </h1>
+    <h1 class="hindex_right">
+        <a class="no_border" href="/articles/"> Additional Thoughts</a>
+        <a class="no_border" href="mailto:mail@wfurney.com">mail@wfurney.com</a>
+    </h1>
+</head>
 
 <ul class="ulnone">
     <p style="padding-left: 0"><br>
@@ -9,6 +19,9 @@
         <li class="large">
             <u style="font-size: small;">Sep 24</u><br> 
             <a class = "no_border" href="replacestart.html">Replace Start Menu on Windows</a><br>
+            <hr class="linebreak">
+            <u style="font-size: small;">Sep 24</u><br>
+                        <a class = "no_border" href="whynottrump.html">Vote for the Vice President</a><br>
             <hr class="linebreak">
             <u style="font-size: small;">Aug 24</u><br>
             <a class = "no_border" href="24tte.html">2024 Trip to Europe</a><br>
