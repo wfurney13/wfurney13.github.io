@@ -3,7 +3,7 @@ layout: article
 ---
 * auto-gen TOC:
 {:toc}
-<a class="prev" href="/articles/useyt"> < </a><a class="next" href="/articles/24tte"> > </a>
+<a class="prev" href="/articles/useyt"> < </a> <a class="next" href="/articles/24tte"> > </a>
 
 ## What's all wrong with this SQL?
 
