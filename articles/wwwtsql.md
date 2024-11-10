@@ -3,11 +3,11 @@ layout: article
 ---
 * auto-gen TOC:
 {:toc}
-<a class="prev" href="/articles/useyt">< </a><a class="next" href="/articles/24tte"> > </a>
+<a class="prev" href="/articles/useyt"> < </a><a class="next" href="/articles/24tte"> > </a>
 
 ## What's all wrong with this SQL?
 
-Take a look at this *gorgeous* SQL I found on the internet. *Forget DATETIME store Day as a varchar and (wait, what?) How many more issues can you spot?*  
+Take a look at this *gorgeous* SQL I found on the internet. *Forget DATETIME, store "Day" as a varchar and (wait, what?) How many more issues can you spot?*  
 
 <img src="/img/wwwsql.png">
                         

@@ -84,8 +84,7 @@ STACK_TEXT:
 000000f1`d52ff880 00000000`00000000 ... ntdll!RtlUserThreadStart+0x28
 ```
 
-      The issue is much more clear with this stack. Notice the call to the function <code>strcat_s</code>. If we
-      search the OT repo for this function, we can find the source of the issue:
+The issue is much more clear with this stack. Notice the call to the function <code>strcat_s</code>. If we search the OT repo for this function, we can find the source of the issue:
 
 ```cpp
 for (const char* ptr : contents)

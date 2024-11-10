@@ -31,9 +31,9 @@ People won't only believe that AI generated content is human-generated, but they
       
 With outside-the-box approaches we can develop tools to help fight against some of this in the short-term. Search engines like [Marginalia](https://www.marginalia.nu/marginalia-search/about/) can be used to do 'reverse SEO' searching to find some old-school human content. This type of search is a welcome reprieve from the modern internet's litany of listicles, AI generated spam, and bloatsites.
 
-```
+<blockquote>
 The purpose of marginalia search is primarily to help you find and navigate the non-commercial parts of the internet. Where, for sure you’ll find crack-pots, communists libertarians, anarchists, strange religious cults, snake oil peddlers, really strong opinions. Yes all manner of strange people.. If you are looking for facts you can trust, this is almost certainly the wrong tool. If you are looking for serendipity, you’re on the right track. When was the last time you just stumbled onto something interesting, by the way?
-``` 
+</blockquote>
 
 [About Marginalia Search](https://www.marginalia.nu/marginalia-search/about/)
 

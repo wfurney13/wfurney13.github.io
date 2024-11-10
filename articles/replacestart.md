@@ -9,8 +9,9 @@ layout: article
 
 ## Replace Start Menu on Windows
 
-I use two main tools to replace the start menu. The first is [Powertoys Run](https://learn.microsoft.com/en-us/windows/powertoys/run) (or [Flow Launcher](https://www.flowlauncher.com/) and the second is
-[Everything for Windows](https://www.voidtools.com/downloads/).
+I use two main tools to replace the start menu:
+- [Powertoys Run](https://learn.microsoft.com/en-us/windows/powertoys/run) (or [Flow Launcher](https://www.flowlauncher.com/))
+- [Everything for Windows](https://www.voidtools.com/downloads/)
 
 There is also an [Everything plugin](https://github.com/lin-ycv/EverythingPowerToys) for both Powertoys Run and Flow Launcher. This allows me to use a hotkey to search for any file on my system, and because of the way Everything indexing works, it's very fast.
 

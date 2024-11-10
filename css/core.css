@@ -293,13 +293,19 @@ pre.highlight {
   color: #f92672;
 }
 
-.highlight {
+pre.highlight {
   color: #f8f8f2;
-  background-color: #1b1d1e;
-  margin-left: 35%;
-  margin-right: 30%;
+  background-color: rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 2px #d6d6d6;
+  -webkit-box-shadow: 0px 0px 2px #d6d6d6;
+  border: none;
   width: auto;
 
+}
+
+div.highlight {
+  margin-left: 36%;
+  margin-right: 36%;
 }
 
 
@@ -330,12 +336,12 @@ ol {
 
 a {
   text-decoration: none;
-  color: 000000;
+  color: FFFFFF;
 }
 
 a:link {
   text-decoration: none;
-  border-bottom: 1px dotted #000000;
+  border-bottom: 1px dotted #FFFFFF;
 }
 
 a.no_border {
@@ -348,17 +354,17 @@ a.no_border:hover {
 
 a.ahead {
   border-bottom: none;
-  color: 000000;
+  color: FFFFFF;
 }
 
 a:hover {
   color: #d4d000;
-  border-bottom: 1px dotted #000000;
+  border-bottom: 1px dotted #FFFFFF;
 }
 
 a.ahead:hover {
   border-bottom: none;
-  color: 000000;
+  color: FFFFFF;
 }
 
 img.contain {
@@ -381,7 +387,7 @@ code.caption {
 span.hide {
   display: none;
   background: b0b0b0;
-  color: 000000;
+  color: FFFFFF;
   width: fit-content;
 }
 
@@ -429,8 +435,8 @@ body {
   font-family: 'Lora', serif;
   line-height: 1.75;
   margin: 0;
-  color: 000000;
-  background: #edede6;
+  color: #FFFFFF;
+  background: #231f39;
 }
 
 blockquote {
@@ -446,11 +452,10 @@ blockquote {
   margin-right: 36%;
   border-right: none;
   line-height: 1.5;
-  background: #d6d6d6;
-  color: #000000;
-  -moz-box-shadow: 0px 5px 15px #d6d6d6;
-  -webkit-box-shadow: 0px 5px 15px #d6d6d6;
-  box-shadow: 0px 5px 0px #d6d6d6;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+  -moz-box-shadow: 0px 0px 2px #d6d6d6;
+  -webkit-box-shadow: 0px 0px 2px #d6d6d6;
 
 }
 
@@ -602,12 +607,12 @@ h2 {
 }
 
 .linebreak {
-  color: 000000;
+  color: FFFFFF;
   opacity: 50%;
 }
 
 .linebreakcontent {
-  color: 000000;
+  color: FFFFFF;
   opacity: 50%;
 }
 
@@ -618,7 +623,7 @@ h2 {
     padding: 0;
     line-height: 1.5;
     background: #19001f;
-    color: #000000;
+    color: #FFFFFF;
     margin-left: 0;
     margin-right: 0;
 
@@ -742,7 +747,7 @@ h2 {
 
   .linebreak {
     margin-right: 0%;
-    color: 000000;
+    color: FFFFFF;
     opacity: 50%;
   }
 
