@@ -7,11 +7,14 @@ layout: article
 
 ## What's all wrong with this SQL?
 
-Take a look at this *gorgeous* SQL I found on the internet. *Forget DATETIME, store "Day" as a varchar and (wait, what?) How many more issues can you spot?*  
+Take a look at this *gorgeous* SQL I found on the internet.
 
-<img src="/img/wwwsql.png">
-                        
-Here's how I would re-write it:
+<div class="pic">
+<img class="contain" src="/img/wwwsql.png">
+<p><i>Forget DATETIME, store "Day" as a varchar and ...wait, what?</i></p>
+</div>   
+                     
+How many more issues can you spot? Here's how I would re-write it:
 
 ```sql
 CREATE TABLE dbo.STORE_SALES (

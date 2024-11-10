@@ -14,10 +14,12 @@ Earlier this week the NASA mission OSIRIS-REx returned a sample of the asteroid 
 comments on many such stories really need to be seen to be believed [^1].
 
 Here, for instance, we see a member of the retreival team beginning to inspect the payload:
-      
-<a href='https://postimg.cc/75D3b1FL' target='_blank'><img src='https://i.postimg.cc/YCLbnb8Q/IMG-1844.jpg' border='0' alt='IMG-1844'></a>
 
-<code style="font-style: italic font-size: small"><br>YouTube Comment Exchange:<br>"They expect us to believe that's a real Hazmat suit with the hair showing, lol"<br>"Dude that's a sweatshirt"</code><br>
+<div class="pic">      
+<a class="contain" href='/img/marg.jpg' target='_blank'><img src='/img/marg.jpg' border='0' alt='IMG-1844'></a>
+</div>
+<br>
+<code style="font-style: italic font-size: small"> YouTube Comment Exchange:<br>"They expect us to believe that's a real Hazmat suit with the hair showing, lol"<br> "Dude that's a sweatshirt"</code>
 
 Another such discussion involved an artist's rendition of the probe gathering the sample, the comments were filled with things like, "there's no way that's real" and "they can't possibly think that we would believe this". YouTube community post comments for major news outlets are an absolute goldmine for this kind of stuff — and this is not a minority of the comments — it's a loud *majority*. It could be NASA missions, someone having a heart attack ("musta been the jab"), or whatever else.
     

@@ -1,21 +1,9 @@
 {% include css_link.html %}
-
-<head>
-    <title>wfurney.com</title>
-    <h1>
-        <a class = "no_border" href="/index.html">William Furney</a>
-    </h1>
-    <h1 class="hindex_right">
-        <a class="no_border" href="/articles/"> Additional Thoughts</a>
-        <a class="no_border" href="mailto:mail@wfurney.com">mail@wfurney.com</a>
-    </h1>
-</head>
+{% include header.html %}
+{% include links_and_email.html %}
 
 <ul class="ulnone">
-    <p style="padding-left: 0"><br>
-        <a class = "no_border" href="https://www.linkedin.com/in/william-furney-39a418154/">Linkedin</a>
-        | <a class = "no_border" href="https://github.com/wfurney13/">GitHub</a>
-        | <a class = "no_border" href="../keys.html">Keys</a>
+    <p style="padding-left: 0">
         <li class="large">
             <u style="font-size: small;">Sep 24</u><br> 
             <a class = "no_border" href="replacestart.html">Replace Start Menu on Windows</a><br>
