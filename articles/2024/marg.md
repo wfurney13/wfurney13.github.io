@@ -4,8 +4,8 @@ layout: article
 * auto-gen TOC:
 {:toc}
 
-<a class="prev" href="/articles/xpev"> < </a>
-<a class="next" href="/articles/useyt"> > </a>
+<a class="prev" href="/articles/2024/xpev"> < </a>
+<a class="next" href="/articles/2024/useyt"> > </a>
 
 ## Marginalia Search 
 
@@ -50,9 +50,9 @@ As for the ancillary issue, well... people have always believed wacky things, ri
   [1] - YouTube now allows (and heavily promotes) community posts, which
   essentially function the same as
   Instagram posts for major news outlets -- except the comments tend to be even more conspiratorial and
-  deranged <a class="inline" href="/articles/marg#fn1ref">↩</a><br>
+  deranged <a class="inline" href="/articles/2024/marg#fn1ref">↩</a><br>
   [2] - <a id="2"  target="_blank" 
     href="https://www.monmouth.edu/polling-institute/documents/monmouthpoll_us_092722.pdf/">pg 7, In a poll conducted in
     Sep 2022, 61% of Republicans believe Joe Biden won the 2020 election "due to voter fraud" [monmouth.edu]</a> <a
-    class="inline" href="/articles/marg#fn2ref">↩</a><br>
+    class="inline" href="/articles/2024/marg#fn2ref">↩</a><br>
 </p> -->

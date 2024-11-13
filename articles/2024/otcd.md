@@ -5,7 +5,7 @@ layout: article
 {:toc}
 
 <a class="prev"> < </a>
-<a class="next" href="/articles/xpev"> > </a>
+<a class="next" href="/articles/2024/xpev"> > </a>
 
 ## OpenTrack Crash Troubleshooting
 

@@ -3,8 +3,8 @@ layout: article
 ---
 * auto-gen TOC:
 {:toc}
-<a class="prev" href="/articles/24tte"> < </a>
-<a class="next" href="/articles/replacestart"> > </a>
+<a class="prev" href="/articles/2024/24tte"> < </a>
+<a class="next" href="/articles/2024/replacestart"> > </a>
 
 ## Why I am not voting for Donald Trump
 

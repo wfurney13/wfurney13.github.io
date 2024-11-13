@@ -4,7 +4,7 @@ layout: article
 * auto-gen TOC:
 {:toc}
 
-<a class="prev" href="/articles/otcd"> < </a> <a class="next" href="/articles/marg"> > </a>
+<a class="prev" href="/articles/2024/otcd"> < </a> <a class="next" href="/articles/2024/marg"> > </a>
 
 ## Xonsh
 

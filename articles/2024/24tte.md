@@ -3,8 +3,8 @@ layout: article
 ---
 * auto-gen TOC:
 {:toc}
-<a class="prev" href="/articles/wwwtsql"> < </a>
-<a class="next" href="/articles/whynottrump"> > </a>
+<a class="prev" href="/articles/2024/wwwtsql"> < </a>
+<a class="next" href="/articles/2024/whynottrump"> > </a>
 
 Here are some of my favorite pictures from my recent trip to Europe.
 

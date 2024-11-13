@@ -4,7 +4,7 @@ layout: article
 * auto-gen TOC:
 {:toc}
 
-<a class="prev" href="/articles/whynottrump"> < </a>
+<a class="prev" href="/articles/2024/whynottrump"> < </a>
 <a class="next"> > </a>
 
 ## Replace Start Menu on Windows
