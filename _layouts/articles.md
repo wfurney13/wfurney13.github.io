@@ -2,8 +2,9 @@
 {% include header.html %}
 {% include links_and_email.html %}
 
+<div>
+<h2>2024</h2>
 <ul class="ulnone">
-    <p style="padding-left: 0">
         <li class="large">
             <u style="font-size: small;">Sep 24</u><br> 
             <a class = "no_border" href="/articles/2024/replacestart.html">Replace Start Menu on Windows</a><br>
@@ -18,8 +19,13 @@
             <a class = "no_border" href="/articles/2024/wwwtsql.html">What's All Wrong With This SQL?</a><br>
             <hr class="linebreak">
             <u style="font-size: small;">Jan 24</u><br>
-            <a class = "no_border" href="/articles/2024/useyt.html">Make YouTube Usable (Again)</a><br>
-            <hr class="linebreak">
+             <a class = "no_border" href="/articles/2024/useyt.html">Make YouTube Usable (Again)</a>
+</ul>
+</div>
+<div>
+    <h2>2023</h2>
+<ul class="ulnone">
+        <li class="large">
             <u style="font-size: small;">Sep 23</u> <br>
             <a class = "no_border" href="/articles/2024/marg.html">Marginalia</a><br>
             <hr class="linebreak">
@@ -31,3 +37,5 @@
             <hr class="linebreak">
         </li>
 </ul>
+
+</div>
