@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Rye&display=swap');
 
 
 pre>code {
@@ -303,6 +304,17 @@ pre.highlight {
 
 }
 
+div.articles a {
+  border: none;
+  font-family: 'Lora';
+}
+
+div.articles u {
+  font-size: 8pt;
+  font-family: 'PT Mono';
+  opacity: 20%;
+}
+
 div.highlight {
   margin-left: 20%;
   margin-right: 36%;
@@ -315,6 +327,39 @@ div.pic {
 
 div.pic p {
   margin-left: -28%;
+}
+
+div.homepage_container {
+  display: flex;
+}
+
+div.homepage_bio {}
+
+div.homepage_bio p {
+  text-align: left;
+  font-family: 'PT Mono';
+}
+
+div.homepage_links {
+  line-height: 150%;
+  padding-left: 5%;
+}
+
+div.homepage_links h1 {
+  text-align: left;
+  font-family: 'PT Mono'
+}
+
+div.homepage_links h2 {
+  text-align: left;
+  font-size: 8pt;
+  font-family: 'Rye';
+  opacity: 20%;
+  padding-left: 0px;
+}
+
+div.homepage_links h1 a {
+  border: none;
 }
 
 
@@ -706,6 +751,47 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
 
+  div.homepage_container {}
+
+  div.homepage_bio p {
+    text-align: left;
+    font-family: 'PT Mono';
+    padding-left: 5%;
+    padding-right: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  div.homepage_bio {}
+
+  div.homepage_links {
+    line-height: 150%;
+    padding-left: 30%;
+  }
+
+  div.homepage_links h1 {
+    text-align: left;
+    font-family: 'PT Mono'
+  }
+
+  div.homepage_links h2 {
+    text-align: left;
+    font-size: 8pt;
+    font-family: 'Rye';
+    opacity: 20%;
+    padding-left: 0px;
+  }
+
+  h2.dates {
+    font-size: 8pt;
+    font-family: 'Rye';
+    opacity: 20%;
+  }
+
+  div.homepage_links h1 a {
+    border: none;
+  }
+
   div.highlight {
     margin-left: 36%;
     margin-right: 36%;
@@ -716,7 +802,8 @@ h2 {
   }
 
   div.footnotes {
-    padding-left: 43.88%;
+    padding-left: 37.1%;
+    margin-right: 36%;
   }
 
 

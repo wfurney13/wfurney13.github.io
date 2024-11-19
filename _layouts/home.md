@@ -1,3 +1,8 @@
 {% include css_link.html %}
 {% include header.html %}
-{% include links_and_email.html %}
+
+<body>
+
+    {{ content }}
+
+</body>
