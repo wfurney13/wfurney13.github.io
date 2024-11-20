@@ -1,13 +1,17 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**Replace Start Menu on Windows** <br> [software](/articles/tags/software)
+
+</div>
+
 * auto-gen TOC:
 {:toc}
 
 <a class="prev" href="/articles/2024/whynottrump"> < </a>
 <a class="next"> > </a>
-
-## Replace Start Menu on Windows
 
 I use two main tools to replace the start menu:
 - [Powertoys Run](https://learn.microsoft.com/en-us/windows/powertoys/run) (or [Flow Launcher](https://www.flowlauncher.com/))

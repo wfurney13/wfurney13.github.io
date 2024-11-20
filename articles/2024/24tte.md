@@ -1,6 +1,12 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**2024 Trip to Europe** <br> vacation, photography
+
+</div>
+
 * auto-gen TOC:
 {:toc}
 <a class="prev" href="/articles/2024/wwwtsql"> < </a>

@@ -1,11 +1,14 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**What's all wrong with this SQL?** <br> [software](/articles/tags/software)
+</div>
+
 * auto-gen TOC:
 {:toc}
 <a class="prev" href="/articles/2024/useyt"> < </a> <a class="next" href="/articles/2024/24tte"> > </a>
-
-## What's all wrong with this SQL?
 
 Take a look at this *gorgeous* SQL I found on the internet.
 

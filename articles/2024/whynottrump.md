@@ -1,12 +1,15 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**Why I am Not Voting for Donald Trump** <br> [politics](/articles/tags/politics)
+</div>
 * auto-gen TOC:
 {:toc}
 <a class="prev" href="/articles/2024/24tte"> < </a>
 <a class="next" href="/articles/2024/replacestart"> > </a>
 
-## Why I am not voting for Donald Trump
 
 In no particular order. I will mark a (K) next to any of these traits I also feel are shared by his opponent.
 

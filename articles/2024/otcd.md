@@ -1,13 +1,17 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**OpenTrack Crash Troubleshooting** <br> [software](/articles/tags/software), [debugging](/articles/tags/debugging)
+
+</div>
+
 * auto-gen TOC:
 {:toc}
 
 <a class="prev"> < </a>
 <a class="next" href="/articles/2024/xpev"> > </a>
-
-## OpenTrack Crash Troubleshooting
 
 <p> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS
         head-tracking

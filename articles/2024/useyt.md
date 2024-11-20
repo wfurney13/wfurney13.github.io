@@ -1,12 +1,17 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**Make YouTube Usable (Again)** <br> [internet](/articles/tags/internet), [software](/articles/tags/software) 
+
+</div>
+
 * auto-gen TOC:
 {:toc}
 <a class="prev" href="/articles/2024/marg"> < </a>
 <a class="next" href="/articles/2024/wwwtsql"> > </a>
 
-## Make YouTube Usable (Again)
 
 <p>
             Have you ever noticed that YouTube is way worse than it used to be? It's time we got rid of YouTube shorts,

@@ -1,13 +1,17 @@
 ---
 layout: article
 ---
+<div class="tags" markdown="1">
+
+**Marginalia Search** <br> [AI](/articles/tags/ai), [internet](/articles/tags/internet), [software](/articles/tags/software)
+
+</div>
+
 * auto-gen TOC:
 {:toc}
 
 <a class="prev" href="/articles/2024/xpev"> < </a>
 <a class="next" href="/articles/2024/useyt"> > </a>
-
-## Marginalia Search 
 
 ## Return to Earth
 Earlier this week the NASA mission OSIRIS-REx returned a sample of the asteroid Bennu to Earth. The YouTube
