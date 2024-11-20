@@ -3,7 +3,7 @@ layout: article
 ---
 <div class="tags" markdown="1">
 
-**2024 Trip to Europe** <br> vacation, photography
+**2024 Trip to Europe** <br> [vacation](/articles/tags/vacation), [photography](/articles/tags/photography)
 
 </div>
 
