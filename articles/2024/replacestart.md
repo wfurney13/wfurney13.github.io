@@ -11,7 +11,7 @@ layout: article
 {:toc}
 
 <a class="prev" href="/articles/2024/whynottrump"> < </a>
-<a class="next"> > </a>
+<a class="next" href="/articles/2024/dont-talk-unless-you-can-improve-the-silence"> > </a>
 
 I use two main tools to replace the start menu:
 - [Powertoys Run](https://learn.microsoft.com/en-us/windows/powertoys/run) (or [Flow Launcher](https://www.flowlauncher.com/))

@@ -20,9 +20,9 @@ layout: home
 
 <div class="homepage_bio" markdown="1">
 
-This is the personal website of William Furney. The information on this website reflects my personal views & aesthetics. In no way should these be seen to represent the views or aesthetics of my employer. The content I create on this website should be considered dedicated to the ["public domain"](https://fairuse.stanford.edu/overview/public-domain/welcome/).
+This is the personal website of William Furney. The information on this website reflects my personal views & aesthetics. In no way should this site be seen to represent my employer. Any content on this website that I have the right to dedicate, I do so to the ["public domain"](https://fairuse.stanford.edu/overview/public-domain/welcome/).
 
-This website is not perfect and I am (shockingly) not a professional web developer. The source code of this website is still very small (<100KB) and contains no Javascript. The website is statically (painfully) generated using Jekyll. You may still encounter some bugs or issues with the UI. If you'd like you can report these to me via [email](mailto:mail@wfurney.com).
+This website is not perfect and I am (shockingly) not a professional web developer. The source code of this website is still very small (<150KB) and contains no Javascript. The website is generated using Jekyll. You may still encounter some bugs or issues with the site. If you'd like you can report these to me via [email](mailto:mail@wfurney.com).
 
 </div>
 

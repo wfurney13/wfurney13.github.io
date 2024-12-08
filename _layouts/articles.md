@@ -4,6 +4,9 @@
 <h2 class="dates">- 2024 -</h2>
 <ul class="ulnone">
         <li class="large">
+            <u style="font-size: small;">Dec 24</u><br> 
+            <a href="/articles/2024/dont-talk-unless-you-can-improve-the-silence.html">Don't Talk Unless You Can Improve the Silence</a><br>
+            <hr class="linebreak">
             <u style="font-size: small;">Sep 24</u><br> 
             <a href="/articles/2024/replacestart.html">Replace Start Menu on Windows</a><br>
             <hr class="linebreak">
