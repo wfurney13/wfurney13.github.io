@@ -2,18 +2,18 @@
 layout: article
 ---
 
-[ai](/articles/tags/ai)
+[AI](/articles/tags/ai)
 
-[borges](/articles/tags/borges)
+[Borges](/articles/tags/borges)
 
-[debugging](/articles/tags/debugging)
+[Debugging](/articles/tags/debugging)
 
-[internet](/articles/tags/internet)
+[Internet](/articles/tags/internet)
 
-[photography](/articles/tags/photography)
+[Photography](/articles/tags/photography)
 
-[politics](/articles/tags/politics)
+[Politics](/articles/tags/politics)
 
-[software](/articles/tags/software)
+[Software](/articles/tags/software)
 
-[vacation](/articles/tags/vacation)
+[Vacation](/articles/tags/vacation)
