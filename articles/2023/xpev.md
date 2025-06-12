@@ -10,7 +10,7 @@ layout: article
 * auto-gen TOC:
 {:toc}
 
-<a class="prev" href="/articles/2024/otcd"> < </a> <a class="next" href="/articles/2024/marg"> > </a>
+<a class="prev" href="/articles/2023/otcd"> < </a> <a class="next" href="/articles/2023/marg"> > </a>
     
 Xonsh is a "Python-powered, cross-platform, Unix-gazing shell language and command prompt."[^1]Many operations that are clumsy in Windows natively are comparatively simple using the Xonsh shell. Let's take a look at one example, modifying the PATH environment variable.In Windows 11 without Xonsh, modifying your PATH environment variable can be done in either the "Environment Variables" window or by updating this key [^2].
 

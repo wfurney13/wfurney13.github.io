@@ -11,7 +11,7 @@ layout: article
 {:toc}
 
 <a class="prev"> < </a>
-<a class="next" href="/articles/2024/xpev"> > </a>
+<a class="next" href="/articles/2023/xpev"> > </a>
 
 <p> <em>Recently, I collaborated in diagnosing and resolving an issue with OpenTrack (OT), a FOSS
         head-tracking

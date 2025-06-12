@@ -28,13 +28,13 @@
 <ul class="ulnone">
         <li class="large">
             <u style="font-size: small;">Sep 23</u> <br>
-            <a href="/articles/2024/marg.html">Marginalia</a><br>
+            <a href="/articles/2023/marg.html">Marginalia</a><br>
             <hr class="linebreak">
             <u style="font-size: small;">Sep 23</u><br>
-            <a href="/articles/2024/xpev.html">Using the Xonsh shell to Modify Environment Variables</a><br>
+            <a href="/articles/2023/xpev.html">Using the Xonsh shell to Modify Environment Variables</a><br>
             <hr class="linebreak">
             <u style="font-size: small;">May 23</u><br>
-            <a  href="/articles/2024/otcd.html">OpenTrack Crash Troubleshooting</a><br>
+            <a  href="/articles/2023/otcd.html">OpenTrack Crash Troubleshooting</a><br>
             <hr class="linebreak">
         </li>
 </ul>
