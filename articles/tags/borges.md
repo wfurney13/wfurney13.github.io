@@ -3,4 +3,4 @@ layout: article
 ---
 
 ## Articles tagged "Borges"
-- [Marginalia](/articles/2024/donttalk)
+- [Don't Talk Unless You Can Improve the Silence](/articles/2024/dont-talk-unless-you-can-improve-the-silence)

@@ -4,6 +4,8 @@ layout: article
 
 [ai](/articles/tags/ai)
 
+[borges](/articles/tags/borges)
+
 [debugging](/articles/tags/debugging)
 
 [internet](/articles/tags/internet)
