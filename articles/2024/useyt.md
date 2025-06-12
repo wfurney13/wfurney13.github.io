@@ -9,14 +9,14 @@ layout: article
 
 * auto-gen TOC:
 {:toc}
-<a class="prev" href="/articles/2024/marg"> < </a>
+<a class="prev" href="/articles/2023/marg"> < </a>
 <a class="next" href="/articles/2024/wwwtsql"> > </a>
 
 
 <p>
             Have you ever noticed that YouTube is way worse than it used to be? It's time we got rid of YouTube shorts,
             sponsors, clickbait titles and thumbnails, and those <a class="inline"  target="_blank" 
-                href="/articles/2024/marg">insane comments.</a> The goal of this post is to help you
+                href="/articles/2023/marg">insane comments.</a> The goal of this post is to help you
             enhance YouTube so that it resembles the good old days... or at least makes it usable.
         </p>
 <h2><a class="inline" target="_blank" href="https://www.youtube.com/watch?v=Sa47RKkZV8E"
