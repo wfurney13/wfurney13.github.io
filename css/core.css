@@ -543,12 +543,20 @@ footer {
     font-family: 'PT Mono';
   }
 
-  div.homepage_links h2, h2.dates {
+  div.homepage_links h2 {
     text-align: left;
     font-size: 8pt;
     font-family: 'Rye';
     opacity: 20%;
     padding-left: 0px;
+  }
+
+  h2.dates {
+    text-align: left;
+    font-size: 8pt;
+    font-family: 'Rye';
+    opacity: 20%;
+    padding-left: var(--content-padding-large);
   }
 
   div.homepage_links h1 a {
