@@ -18,7 +18,7 @@
   
   /* Fonts */
   --mono-font: "Source Code Pro", "Sans Mono", "Consolas", "Courier", monospace;
-  --serif-font: "Lora", serif;
+  --serif-font: "PT Mono", "Source Code Pro", "Sans Mono", "Consolas", "Courier", monospace;
   --sans-font: Helvetica, sans-serif;
   
   /* Layout */
@@ -47,6 +47,13 @@ h1 {
 
 h2 {
   font-size: 18px;
+  padding: 5px var(--content-padding);
+  font-weight: bold;
+  font-family: var(--sans-font);
+}
+
+h3 {
+  font-size: 16px;
   padding: 5px var(--content-padding);
   font-weight: bold;
   font-family: var(--sans-font);
@@ -207,11 +214,17 @@ pre.highlight {
 
 /* Lists */
 ul {
-  list-style-type: none;
+  list-style-type: disc;
 }
 
-li::marker {
+ol li::marker {
   content: counter(list-item);
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+ul li::marker {
+  content: "⁃ ";
   color: var(--accent-color);
   font-weight: bold;
 }
@@ -220,6 +233,10 @@ div.footnotes li::marker {
   content: "FN" counter(list-item);
   color: var(--accent-color);
   font-weight: bold;
+}
+
+div.footnotes li {
+  padding-left: 8px;
 }
 
 li {
@@ -239,7 +256,7 @@ ul.ulnone {
 }
 
 ol {
-  padding-inline-start: 2px;
+  padding-inline-start: 40px;
 }
 
 /* Special Elements */
@@ -509,7 +526,11 @@ footer {
 
   ul {
     list-style-type: circle;
-    padding-left: 21%;
+    padding-left: var(--content-padding);
+  }
+  
+  ol {
+    padding-left: var(--content-padding);
   }
 
   .prefs {
@@ -582,7 +603,13 @@ footer {
 
   ul {
     list-style-type: circle;
-    padding: 0 25% 0 39%;
+    padding-left: var(--content-padding-large);
+    padding-right: var(--content-padding);
+  }
+  
+  ol {
+    padding-left: var(--content-padding-large);
+    padding-right: var(--content-padding);
   }
 
   ul#markdown-toc {
@@ -620,8 +647,8 @@ footer {
   li {
     font-size: 10;
     padding-right: 0px;
-    margin-left: -22%;
-    padding-left: 5%;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .prefs {
@@ -630,6 +657,10 @@ footer {
   }
 
   h2 {
+    padding: 0 10% 0 var(--content-padding-large);
+  }
+
+  h3 {
     padding: 0 10% 0 var(--content-padding-large);
   }
 
